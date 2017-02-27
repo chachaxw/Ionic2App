@@ -1,0 +1,484 @@
+//////////////////////////////////////////////////
+// YELLOW DARK THEME
+
+//  Font Style
+//  Font sizes
+//  Global Colors
+//  Global Opacity
+//  Color Function
+//  Gradients
+//  Changing Background Images in Black&White Mode
+//  Blend Mode Colors
+//  Dividers Settings
+//  Border Radius
+//  Content Color Settings
+//  Shadows
+//  Icon Sizes
+//  Icon Settings
+//  Social Icons Color
+//  Span Settings
+//  LIST VIEWS - Header
+//  LIST VIEWS - Item Parameters
+//  LIST VIEWS - Subitem Parameters
+//  Badge with Icon Settings
+//  Button Settings
+//  Google Cards Settings
+//  Swipe Item
+//  Parallax Settings
+//  Text View Settings
+//  Footer Settings
+//  Checkbox
+//  Wizard Settings
+//  Input Field Settings
+//  Search Bar Settings
+//  Animations
+//  Background Sizes
+//  Default Overview Ionic
+//////////////////////////////////////////////////
+
+// Font Style
+$font-name: 'Roboto', sans-serif;
+$font-weight-value: 300 !default;
+
+
+.bar.bar-stable .title,
+
+.item h2[item-title],
+.item h3[item-subtitle],
+.item h2[subitem-title],
+.item h3[subitem-subtitle],
+h2[swiped-item-title],
+ion-card h2[card-title],
+ion-card h3[card-subtitle],
+ion-card p[card-body-text],
+h2[search-bar-title],
+ion-title .toolbar-title,
+.main-menu ion-label,
+.submenu ion-label,
+body,
+ion-label,
+a,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+p {
+  font-family: $font-name;
+  font-weight: $font-weight-value; }
+
+
+// Font sizes
+$font-size-text:(
+  'h1': 24px,
+  'h2': 20px,
+  'h3': 16px,
+  'h4': 14px,
+  'h5': 12px,
+  'h6': 10px,
+  'p': 14px
+);
+@function font-size-text($key) {
+  @return map-get($font-size-text, $key);
+}
+
+[left] {
+  float: left;
+}
+[right] {
+  float: right;
+}
+
+
+// Global Colors
+$palettes: (
+    mainColors: ( // Also used for backgrounds.
+
+        primary:   #424242, // Used for toolbars
+        secondary:  #FCD736, // Used for various small elements
+        accent:   #202020 //Used for icon-search-bar, loaders-spinners, checkbox-item, icon, button, span, input-field-icons
+    ),
+
+    textColors: ( // Used for text colors in all screens
+
+        primary: #FCD736, // Used for text colors in: item-title, item-subtitle, header-title, header-subtitle
+        secondary: #FEFEFE, // Used for text colors in: buttons, header-title, subitem-title, subitem-subtitle
+        accent:   #ffffff // Used for text colors in: header-title, header-subtitle
+    ),
+    blendModes: ( // Used for blend modes
+
+        primary:  #ffffff,
+        secondary: #424242
+    )
+);
+
+// Global Opacity
+$global-opacity: (
+  'opacity0': 0,
+  'opacity10': 0.1,
+  'opacity20': 0.2,
+  'opacity30': 0.3,
+  'opacity40': 0.4,
+  'opacity50': 0.5,
+  'opacity60': 0.6,
+  'opacity70': 0.7,
+  'opacity80': 0.8,
+  'opacity90': 0.9,
+  'opacity100': 1
+);
+
+// Function to print color
+@function theme-colors($name: 'blendModes', $variant: 'primary', $opacity: 1) {
+  // Get the color spectrum
+  $color-spectrum: map-get($palettes, $name);
+  // Get the color variant
+  $color: map-get($color-spectrum, $variant);
+  // Get the alpha setting
+  $alpha: if(type-of($opacity) == 'number', $opacity, map-get($global-opacity, $opacity));
+  // Set the alpha of the color
+  @if $alpha {
+    $color: rgba($color, $alpha);
+  }
+  @return $color;
+}
+
+// Gradient
+@mixin gradient-accent {
+  background: #fcb64e;
+  background: -moz-linear-gradient(left, #fcb64e 0%, #f1582c 50%, #b72025 100%);
+  background: -webkit-linear-gradient(left, #fcb64e 0%, #f1582c 50%,#b72025 100%);
+  background: linear-gradient(to left, #fcb64e 0%, #f1582c 50%,#b72025 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#fcb64e', endColorstr='#b72025',GradientType=1 );
+}
+
+// Changing Background Images in Black&White Mode
+@mixin black-white-mode {
+  background-color: theme-colors('blendModes', 'primary');
+  background-blend-mode: luminosity;
+}
+// Darkening and Black&White Blend Mode
+@mixin darkening-blend-mode {
+    @include black-white-mode;
+     &::before {
+       content: "";
+       display: block;
+       height: 100%;
+       width: 100%;
+       top: 0;
+       left: 0;
+       position: absolute;
+       pointer-events: none;
+       mix-blend-mode: multiply;
+      background-color: theme-colors('blendModes', 'secondary');
+     }
+}
+
+[images-filter] {
+  -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+// Divider Settings
+$item-divider-small: 1px solid theme-colors('mainColors', 'accent');
+$item-divider-medium: 2px solid theme-colors('mainColors', 'secondary');
+$item-divider-large: 4px solid theme-colors('mainColors', 'secondary');
+
+// Border Radius
+$border-radius: 4px;
+
+// Content Color Settings
+$content-bcg: theme-colors('mainColors', 'accent');
+
+// Shadows
+$box-shadow-z1: 0 2px 10px rgba(0, 0, 0, 0.2);
+$box-shadow-z2: 0 4px 10px rgba(0, 0, 0, 0.2);
+$box-shadow-z3: 0 6px 10px rgba(0, 0, 0, 0.2);
+
+// Icon Sizes
+$icon-size:(
+  'icon-small': 20px,
+  'icon-medium': 32px,
+  'icon-large': 60px
+);
+@function icon-size($key: 'icon-small') {
+  @return map-get($icon-size, $key);
+}
+
+// Icon Settings
+[icon-small] {
+  color: theme-colors('mainColors', 'secondary', 'opacity60') !important;
+  font-size: icon-size('icon-small') !important;
+}
+[icon-medium] {
+  color: theme-colors('mainColors', 'secondary', 'opacity60') !important;
+  font-size: icon-size('icon-medium') !important;
+}
+
+[icon-large] {
+  color: theme-colors('mainColors', 'secondary', 'opacity60') !important;
+  font-size: icon-size('icon-large') !important;
+}
+
+//  Social Icons Color
+@mixin social {
+   @if &{
+    i.icon {
+      color: theme-colors('mainColors', 'secondary', 'opacity60');
+      font-size: icon-size('icon-small');
+      width: 20px;
+    }
+  }
+}
+
+// Span Settings
+[span-small]{
+  color: theme-colors('mainColors', 'secondary');
+  font-size: font-size-text('h5');
+}
+
+[span-medium]{
+  color: theme-colors('mainColors', 'secondary');
+  font-size: font-size-text('h1');
+}
+
+[span-large]{
+  color: theme-colors('mainColors', 'secondary');
+  font-size: font-size-text('h1');
+}
+
+
+// LIST VIEWS - Header
+[header-title]{
+  color: theme-colors('mainColors', 'primary');
+  font-size: font-size-text('h1');
+}
+
+[header-subtitle]{
+  color: theme-colors('mainColors', 'primary');
+  font-size: font-size-text('h4');
+}
+
+[header-bcg]{
+  background-color: theme-colors('mainColors', 'secondary') !important;
+  box-shadow: $box-shadow-z1;
+}
+
+[header-divider]{
+  background-color: theme-colors('mainColors', 'secondary');
+  box-shadow: $box-shadow-z1;
+  border: none;
+}
+
+[item-bcg] {
+  background-color: theme-colors('mainColors', 'primary')!important;
+  .item-inner{ // Border Color
+        border-color: theme-colors('mainColors', 'accent') !important;
+  }
+}
+
+[item-title] {
+  color: theme-colors('textColors', 'primary') !important;
+  font-size: font-size-text('h2') !important;
+}
+
+[item-subtitle] {
+  color: theme-colors('textColors', 'secondary', 'opacity60') !important;
+  font-size: font-size-text('h5') !important;
+}
+
+// LIST VIEWS - Subitem Parameters
+[subitem-bcg] {
+  background-color: theme-colors('mainColors', 'accent') !important;
+}
+
+[subitem-title] {
+  color: theme-colors('textColors', 'accent');
+  font-size: font-size-text('h4');
+  line-height: normal;
+}
+
+[subitem-subtitle] {
+  color: theme-colors('textColors', 'accent', 'opacity60');
+  font-size: font-size-text('h5');
+}
+
+// Button Settings
+[default-button] {
+  background-color: theme-colors('mainColors', 'secondary') !important;
+  color: theme-colors('mainColors', 'accent') !important;
+  font-size: font-size-text('h3') !important;
+  font-weight: 500 !important;
+  border-radius: $border-radius !important;
+}
+
+[button-clear] {
+  color: theme-colors('textColors', 'primary') !important;
+  font-size: font-size-text('h3') !important;
+}
+
+[button-clear-outline] {
+  color: theme-colors('mainColors', 'primary') !important;
+  font-size: font-size-text('h3') !important;
+  border: 1px solid theme-colors('mainColors', 'primary') !important;
+}
+
+// Fab Button Settings
+[button-ion-fab] {
+    background-color: theme-colors('mainColors', 'secondary') !important;
+    color: theme-colors('mainColors', 'accent') !important;
+    border-radius: 50% !important;
+    position: fixed !important;
+    z-index: 9 !important;
+    bottom: 20px;
+    right: 20px;
+    height: 56px !important;
+    width: 56px !important;
+    ion-icon {
+      margin-top: 2px;
+      display: block;
+    }
+  }
+
+
+//Google Cards Settings
+[card-title]{
+  color: theme-colors('textColors', 'primary') !important;
+  font-size: font-size-text('h2') !important;
+}
+
+[card-subtitle]{
+  color: theme-colors('textColors', 'secondary', 'opacity60') !important;
+  font-size: font-size-text('h4') !important;
+}
+
+[card-body-text]{
+  color: theme-colors('textColors', 'secondary', 'opacity60') !important;
+  font-size: font-size-text('p');
+}
+
+[card-bcg]{
+  background-color: theme-colors('mainColors', 'primary') !important;
+  box-shadow: $box-shadow-z1;
+}
+
+// Swipe Item
+[swiped-item-bcg]{
+  background-color: theme-colors('mainColors', 'primary', 'opacity60')!important;
+}
+
+[swiped-item-title]{
+  color: theme-colors('textColors', 'accent');
+  margin: 0;
+  font-size: font-size-text('h5') !important;
+  text-transform: initial;
+}
+
+// Parallax Settings
+[parallax-title]{
+  color: theme-colors('textColors', 'primary');
+  font-size: font-size-text('h1') !important;
+}
+
+[parallax-subtitle]{
+  color: theme-colors('textColors', 'primary');
+  font-size: font-size-text('h4') !important;
+}
+
+// Wizard Setting
+
+[wizard-bcg] {
+  background-color: theme-colors('mainColors', 'secondary');
+}
+[wizard-title] {
+  color: theme-colors('textColors', 'primary');
+  font-size: font-size-text('h3') !important;
+}
+[wizard-body-text]{
+  color: theme-colors('textColors', 'primary', 'opacity60');
+  font-size: font-size-text('h4') !important;
+}
+
+// Tabs Setting
+
+[tabs-bcg] {
+  background-color: theme-colors('mainColors', 'primary');
+}
+
+[tabs-title] {
+  color: theme-colors('textColors', 'primary');
+  font-size: font-size-text('h2') !important;
+}
+
+[tabs-subtitle] {
+  color: theme-colors('textColors', 'primary');
+  font-size: font-size-text('h2') !important;
+}
+
+
+// Search Bar Setting
+
+[search-bar-title]{
+  color: theme-colors('textColors', 'primary');
+  font-size: font-size-text('h1') !important;
+}
+
+[search-bar-bcg]{
+  background-color: theme-colors('mainColors', 'primary');
+}
+
+//Animations
+@mixin animation {
+  -webkit-animation: fadeInRight 500ms;
+  -moz-animation: fadeInRight 500ms;
+  -o-animation: fadeInRight 500ms;
+  animation: fadeInRight 500ms;
+}
+
+//Background Size
+[background-size] {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+//Default Overview Ionic
+  ion-list > .item:last-child, ion-list > .item-wrapper:last-child .item {
+      border-bottom: 1px solid theme-colors('mainColors', 'accent') !important;
+  }
+
+   ion-list > .item:first-child, ion-list > .item-wrapper:first-child .item{
+     border-top: none !important;
+  }
+  [no-padding] {
+    padding: 0 !important;
+  }
+
+  [no-margin]{
+    margin: 0 !important;
+  }
+  //Background colors settings
+  .scroll-content {
+    background-color: theme-colors('mainColors', 'accent') !important;
+
+    //Setings color and font size text
+    .main-menu ion-label,
+    .submenu ion-label{
+      color: theme-colors('textColors', 'primary') !important;
+      font-size:  font-size-text('h2');
+    }
+  }
+  // Toolbar colors
+  .toolbar {
+    .toolbar-background{
+      background-color: theme-colors('mainColors', 'secondary') !important;
+    }
+    .toolbar-title{
+      color: theme-colors('mainColors', 'accent') !important;
+      text-transform: uppercase;
+    }
+    .bar-button-default {
+      color: theme-colors('mainColors', 'accent') !important;
+    }
+  }
