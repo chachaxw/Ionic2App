@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-left>{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+  <ion-list no-padding no-margin>
+    <button ion-item no-padding item-bcg class="submenu" *ngFor="let p of pages"  (click)="openPage(p)">
+        {{p.title}}
+    </button>
+  </ion-list>
+</ion-content>
