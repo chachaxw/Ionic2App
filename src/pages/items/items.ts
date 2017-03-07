@@ -5,7 +5,6 @@ import { IService } from '../../services/IService';
 
 @Component({
   templateUrl: 'items.html',
-  providers: []
 })
 
 export class ItemsPage {
@@ -18,9 +17,7 @@ export class ItemsPage {
   // services: array
   constructor(
     public navCtrl: NavController,
-    navParams: NavParams
-  ) {
-
+    navParams: NavParams) {
     this.listServices = {};
 
     this.componentName = navParams.get('componentName');
