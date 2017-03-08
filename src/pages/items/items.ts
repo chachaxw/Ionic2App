@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 import { IService } from '../../services/IService';
+import { ItemDetailsPage } from '../item-details/item-details';
 
 @Component({
   templateUrl: 'items.html',
@@ -18,8 +19,6 @@ export class ItemsPage {
   constructor(
     public navCtrl: NavController,
     navParams: NavParams) {
-    this.listServices = {};
-
     this.componentName = navParams.get('componentName');
     this.service = this.listServices[this.componentName];
 
@@ -30,7 +29,8 @@ export class ItemsPage {
   }
 
   selectPageForOpen(value:string):any {
-
+    let page = ItemDetailsPage;
+    return page;
   }
 
   openPage(page:any) {
