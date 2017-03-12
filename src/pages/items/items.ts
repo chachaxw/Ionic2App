@@ -34,6 +34,15 @@ export class ItemsPage {
   }
 
   openPage(page:any) {
-
+    if (page.listView) {
+      this.navCtrl.push(ItemsPage, {
+        componentName: page.theme
+      });
+    } else {
+      this.navCtrl.push(this.selectPageForOpen(this.componentName), {
+        service: this.service,
+        page: page,
+      });
+    }
   }
 }
