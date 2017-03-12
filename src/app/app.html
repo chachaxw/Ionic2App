@@ -1,1 +1,29 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+  <ion-header>
+    <!-- <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar> -->
+    <div class="header-background-image">
+      <ion-thumbnail>
+      <img src="assets/images/logo/login.png">
+    </ion-thumbnail>
+    <h2 item-title text-center>Ionic2 UI Theme</h2>
+    </div>
+  </ion-header>
+
+  <ion-content>
+    <ion-list no-margin no-padding>
+      <button menuClose ion-item no-padding item-bcg class="main-menu"
+        *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon padding-left>
+          <i class="icon {{p.icon}}"></i>
+        </ion-icon>
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
