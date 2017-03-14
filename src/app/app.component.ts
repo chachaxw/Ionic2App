@@ -23,7 +23,7 @@ export class MyApp {
     this.initializeApp();
     this.pages = menuService.getAllThemes();
     this.leftMenuTitle = menuService.getTitle();
-    console.log(this.pages, this.leftMenuTitle);
+    // console.log(this.pages, this.leftMenuTitle);
   }
 
   initializeApp() {

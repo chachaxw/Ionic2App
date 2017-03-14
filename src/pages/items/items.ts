@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 
 import { IService } from '../../services/IService';
 import { ItemDetailsPage } from '../item-details/item-details';
+import { ItemDetailsPageSplashScreen } from '../item-details-splash-screen/item-details-splash-screen';
 
 @Component({
   templateUrl: 'items.html',
@@ -30,6 +31,11 @@ export class ItemsPage {
 
   selectPageForOpen(value:string):any {
     let page = ItemDetailsPage;
+
+    if (value === "splashScreens") {
+      page = ItemDetailsPageSplashScreen;
+    }
+
     return page;
   }
 

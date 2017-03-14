@@ -1,0 +1,49 @@
+/*  #Style Fade in + Ken Burns 1
+===========================================*/
+splash-screen-layout-1 {
+  .splash-screen {
+    animation: splashScreen 40s ease infinite;
+    -ms-animation: splashScreen 40s ease infinite;
+    -webkit-animation: splashScreen 40s ease infinite;
+    -o-animation: splashScreen 40s ease infinite;
+    -moz-animation: splashScreen 40s ease infinite;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  @keyframes splashScreen {
+    0%,
+    100% {
+      transform: scale(1.5, 1.5) translate(20px, 20px);
+    }
+
+    25% {
+      transform: scale(1.8, 1.8) translate(50px, 50px);
+    }
+
+    50% {
+      transform: scale(1.6, 1.6) translate(60px, 90px);
+    }
+
+    75% {
+      transform: scale(2.0, 2.0) translate(10px, 10px);
+    }
+  }
+
+  .logo {
+    max-width: 100px;
+    position: relative;
+    -webkit-animation: zoomIn 5s;
+    /* Safari 4+ */
+    -moz-animation: zoomIn 5s;
+    /* Fx 5+ */
+    -o-animation: zoomIn 5s;
+    /* Opera 12+ */
+    animation: zoomIn 5s;
+    /* IE 10+, Fx 29+ */
+    margin-top: 60% !important;
+    left: 50%;
+    margin-left: -50px;
+  }
+}
