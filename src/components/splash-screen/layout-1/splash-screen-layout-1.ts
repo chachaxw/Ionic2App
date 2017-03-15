@@ -12,7 +12,7 @@ export class SplashScreenLayout1 {
     constructor() {}
 
     ngAfterViewInit() {
-        this.executeEvents();
+      this.executeEvents();
     }
 
     getData(): any {

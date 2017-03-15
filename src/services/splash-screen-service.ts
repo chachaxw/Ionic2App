@@ -2,6 +2,7 @@ import { IService } from './IService';
 import { NavController } from 'ionic-angular';
 
 export class SplashScreenService implements IService {
+
   constructor() {}
 
   getId = ():string => "SplashScreen";
@@ -26,10 +27,10 @@ export class SplashScreenService implements IService {
 
   getDataForLayout1 = (): any => {
     return {
-        "duration" : 10000,
-        "backgroundImage" : 'assets/images/background/29.jpg',
-        "logo" : 'assets/images/logo/login.png',
-        "title" : "IONICTEMPLATE"
+      "duration" : 10000,
+      "backgroundImage" : 'assets/images/background/29.jpg',
+      "logo" : 'assets/images/logo/login.png',
+      "title" : "IONIC TEMPLATE"
     };
   }
 
@@ -38,7 +39,7 @@ export class SplashScreenService implements IService {
       "duration" : 10000,
       "backgroundImage" : 'assets/images/background/29.jpg',
       "logo" : 'assets/images/logo/login.png',
-      "title" : "IONICTEMPLATE"
+      "title" : "IONIC TEMPLATE"
     };
   };
 
@@ -47,7 +48,7 @@ export class SplashScreenService implements IService {
       "duration" : 10000,
       "backgroundImage" : 'assets/images/background/29.jpg',
       "logo" : 'assets/images/logo/login.png',
-      "title" : "IONICTEMPLATE"
+      "title" : "IONIC TEMPLATE"
     };
   };
 
