@@ -5,8 +5,11 @@ import { IService } from '../../services/IService';
 import { ItemDetailsPage } from '../item-details/item-details';
 import { ItemDetailsPageSplashScreen } from '../item-details-splash-screen/item-details-splash-screen';
 
+import { SplashScreenService } from '../../services/splash-screen-service';
+
 @Component({
   templateUrl: 'items.html',
+  providers: [SplashScreenService]
 })
 
 export class ItemsPage {
@@ -18,8 +21,14 @@ export class ItemsPage {
 
   // services: array
   constructor(
+    navParams: NavParams,
     public navCtrl: NavController,
-    navParams: NavParams) {
+    private splashScreenService: SplashScreenService) {
+
+    this.listServices = {
+      'splashScreens': splashScreenService,
+    };
+
     this.componentName = navParams.get('componentName');
     this.service = this.listServices[this.componentName];
 

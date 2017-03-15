@@ -9,7 +9,7 @@
 
 <ion-content no-padding>
   <ion-list no-padding no-margin>
-    <button ion-item no-padding item-bcg class="submenu" *ngFor="let p of pages"  (click)="openPage(p)">
+    <button ion-item no-padding class="submenu" *ngFor="let p of pages"  (click)="openPage(p)">
         {{p.title}}
     </button>
   </ion-list>
