@@ -4,9 +4,11 @@ import { NavController, NavParams } from 'ionic-angular';
 import { IService } from '../../services/IService';
 import { ItemDetailsPage } from '../item-details/item-details';
 import { ItemDetailsPageSplashScreen } from '../item-details-splash-screen/item-details-splash-screen';
+import { ItemDetailsPageAppearanceAnimation } from '../item-details-appearance-animation/item-details-appearance-animation';
 
 import { SplashScreenService } from '../../services/splash-screen-service';
 import { ListViewService } from '../../services/list-view-service';
+import { ListViewAppearanceAnimationService } from '../../services/list-view-appearance-animation-service';
 
 @Component({
   templateUrl: 'items.html',
@@ -25,11 +27,13 @@ export class ItemsPage {
     navParams: NavParams,
     public navCtrl: NavController,
     private splashScreenService: SplashScreenService,
-    private listViewService: ListViewService) {
+    private listViewService: ListViewService,
+    private listViewAppearanceAnimationService: ListViewAppearanceAnimationService) {
 
     this.listServices = {
       'splashScreens': splashScreenService,
       'listViews': listViewService,
+      'appearanceAnimation': listViewAppearanceAnimationService,
     };
 
     this.componentName = navParams.get('componentName');
@@ -46,6 +50,8 @@ export class ItemsPage {
 
     if (value === "splashScreens") {
       page = ItemDetailsPageSplashScreen;
+    } else if (value === "appearanceAnimation") {
+      page = ItemDetailsPageAppearanceAnimation;
     }
 
     return page;
