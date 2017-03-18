@@ -19,7 +19,7 @@ export class MenuService implements IService {
     ];
   }
 
-  getTitle = (): string => "UIAppTemplate";
+  getTitle = (): string => "UI App Template";
 
   getId = (): string => "menu";
 

@@ -6,10 +6,11 @@ import { ItemDetailsPage } from '../item-details/item-details';
 import { ItemDetailsPageSplashScreen } from '../item-details-splash-screen/item-details-splash-screen';
 
 import { SplashScreenService } from '../../services/splash-screen-service';
+import { ListViewService } from '../../services/list-view-service';
 
 @Component({
   templateUrl: 'items.html',
-  providers: [SplashScreenService]
+  providers: [SplashScreenService, ListViewService]
 })
 
 export class ItemsPage {
@@ -23,10 +24,12 @@ export class ItemsPage {
   constructor(
     navParams: NavParams,
     public navCtrl: NavController,
-    private splashScreenService: SplashScreenService) {
+    private splashScreenService: SplashScreenService,
+    private listViewService: ListViewService) {
 
     this.listServices = {
       'splashScreens': splashScreenService,
+      'listViews': listViewService,
     };
 
     this.componentName = navParams.get('componentName');

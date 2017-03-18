@@ -20,7 +20,7 @@ import { SplashScreenLayout3 } from '../components/splash-screen/layout-3/splash
     ItemDetailsPageSplashScreen,
     SplashScreenLayout1,
     SplashScreenLayout2,
-    SplashScreenLayout3
+    SplashScreenLayout3,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -34,7 +34,7 @@ import { SplashScreenLayout3 } from '../components/splash-screen/layout-3/splash
     ItemDetailsPageSplashScreen,
     SplashScreenLayout1,
     SplashScreenLayout2,
-    SplashScreenLayout3
+    SplashScreenLayout3,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

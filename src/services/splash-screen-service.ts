@@ -7,7 +7,7 @@ export class SplashScreenService implements IService {
 
   getId = ():string => "SplashScreen";
 
-  getTitle = ():string => 'Splash screens';
+  getTitle = ():string => 'Splash Screens';
 
   getAllThemes = (): Array<any> => {
     return [
