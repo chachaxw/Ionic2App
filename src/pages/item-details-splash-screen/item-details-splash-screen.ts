@@ -6,7 +6,6 @@ import {IService} from '../../services/IService';
 @Component({
   templateUrl: 'item-details-splash-screen.html'
 })
-
 export class ItemDetailsPageSplashScreen {
 
   page: any;

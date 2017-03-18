@@ -12,7 +12,7 @@ import { ListViewAppearanceAnimationService } from '../../services/list-view-app
 
 @Component({
   templateUrl: 'items.html',
-  providers: [SplashScreenService, ListViewService]
+  providers: [SplashScreenService, ListViewService, ListViewAppearanceAnimationService]
 })
 
 export class ItemsPage {

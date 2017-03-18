@@ -1,6 +1,6 @@
 <!--Theme Appearance animation (Fade In Left)-->
 <ion-list no-margin>
-  <ion-item item-bcg [ngClass]="animateClass" *ngFor="let item of animateItems; let i = index;"
+  <ion-item [ngClass]="animateClass" *ngFor="let item of animateItems; let i = index;"
   (click)="onEvent('onItemClick', item.title, $event)">
     <ion-avatar item-left>
       <img [src]="item.image" alt="{{item.title}}" />

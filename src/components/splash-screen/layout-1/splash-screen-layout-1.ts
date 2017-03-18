@@ -4,7 +4,6 @@ import { Component, Input } from '@angular/core';
     selector: 'splash-screen-layout-1',
     templateUrl: 'splash-screen.html'
 })
-
 export class SplashScreenLayout1 {
   @Input('data') data: any;
   @Input('events') events: any;
