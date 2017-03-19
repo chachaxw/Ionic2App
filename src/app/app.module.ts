@@ -14,6 +14,7 @@ import { SplashScreenLayout1 } from '../components/splash-screen/layout-1/splash
 import { SplashScreenLayout2 } from '../components/splash-screen/layout-2/splash-screen-layout-2';
 import { SplashScreenLayout3 } from '../components/splash-screen/layout-3/splash-screen-layout-3';
 import { AppearanceAnimationLayout1 } from '../components/list-view/appearance-animation/layout-1/appearance-animation-layout-1';
+import { AppearanceAnimationLayout2 } from '../components/list-view/appearance-animation/layout-2/appearance-animation-layout-2';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AppearanceAnimationLayout1 } from '../components/list-view/appearance-a
     SplashScreenLayout3,
     ItemDetailsPageAppearanceAnimation,
     AppearanceAnimationLayout1,
+    AppearanceAnimationLayout2,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -43,6 +45,7 @@ import { AppearanceAnimationLayout1 } from '../components/list-view/appearance-a
     SplashScreenLayout3,
     ItemDetailsPageAppearanceAnimation,
     AppearanceAnimationLayout1,
+    AppearanceAnimationLayout2,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
