@@ -2,45 +2,45 @@
 # yarn lockfile v1
 
 
-"@angular/common@^2.4.9":
-  version "2.4.9"
-  resolved "http://registry.npm.taobao.org/@angular/common/download/@angular/common-2.4.9.tgz#3094f973e18330526256dcd13fcf27609b7abc08"
+"@angular/common@^2.4.10":
+  version "2.4.10"
+  resolved "http://registry.npm.taobao.org/@angular/common/download/@angular/common-2.4.10.tgz#a3a682d2228fa30ec23dd0eb57c8e887fba26997"
 
-"@angular/compiler-cli@^2.4.9":
-  version "2.4.9"
-  resolved "http://registry.npm.taobao.org/@angular/compiler-cli/download/@angular/compiler-cli-2.4.9.tgz#8ac4e28c12d2b09a10aabf9cb95c569844b90db3"
+"@angular/compiler-cli@^2.4.10":
+  version "2.4.10"
+  resolved "http://registry.npm.taobao.org/@angular/compiler-cli/download/@angular/compiler-cli-2.4.10.tgz#c21143bfaab45231c8d2eaa82456bed3d39f91a3"
   dependencies:
     "@angular/tsc-wrapped" "0.5.2"
     minimist "^1.2.0"
     reflect-metadata "^0.1.2"
 
-"@angular/compiler@^2.4.9":
-  version "2.4.9"
-  resolved "http://registry.npm.taobao.org/@angular/compiler/download/@angular/compiler-2.4.9.tgz#ee159181c4013046598e1d176b45063bddb141f6"
+"@angular/compiler@^2.4.10":
+  version "2.4.10"
+  resolved "http://registry.npm.taobao.org/@angular/compiler/download/@angular/compiler-2.4.10.tgz#f51fd34820b2a02c7cb61fbcf49873c58056fb0c"
 
-"@angular/core@^2.4.9":
-  version "2.4.9"
-  resolved "http://registry.npm.taobao.org/@angular/core/download/@angular/core-2.4.9.tgz#85dca2afa4021be91512c97597702ac8d73092e6"
+"@angular/core@^2.4.10":
+  version "2.4.10"
+  resolved "http://registry.npm.taobao.org/@angular/core/download/@angular/core-2.4.10.tgz#0b8320a65065965d998645b1f5cd3cf769b441ea"
 
-"@angular/forms@^2.4.9":
-  version "2.4.9"
-  resolved "http://registry.npm.taobao.org/@angular/forms/download/@angular/forms-2.4.9.tgz#a1ee9f403267fd78041f9ee77d1c9c24150e1d7c"
+"@angular/forms@^2.4.10":
+  version "2.4.10"
+  resolved "http://registry.npm.taobao.org/@angular/forms/download/@angular/forms-2.4.10.tgz#062133aaade1f3b3c962f1593208c541b622fd06"
 
-"@angular/http@^2.4.9":
-  version "2.4.9"
-  resolved "http://registry.npm.taobao.org/@angular/http/download/@angular/http-2.4.9.tgz#a7de980d564ac25a497c5e822d2b941c1f143d48"
+"@angular/http@^2.4.10":
+  version "2.4.10"
+  resolved "http://registry.npm.taobao.org/@angular/http/download/@angular/http-2.4.10.tgz#ff6beade5b39c989ebf2393c49b34eebd43e9555"
 
-"@angular/platform-browser-dynamic@^2.4.9":
-  version "2.4.9"
-  resolved "http://registry.npm.taobao.org/@angular/platform-browser-dynamic/download/@angular/platform-browser-dynamic-2.4.9.tgz#353b92e8670065ab5b1b6baea3a96928b174ee09"
+"@angular/platform-browser-dynamic@^2.4.10":
+  version "2.4.10"
+  resolved "http://registry.npm.taobao.org/@angular/platform-browser-dynamic/download/@angular/platform-browser-dynamic-2.4.10.tgz#8df25dec2b06adc690cc9bc26448deccaebcd8ec"
 
-"@angular/platform-browser@^2.4.9":
-  version "2.4.9"
-  resolved "http://registry.npm.taobao.org/@angular/platform-browser/download/@angular/platform-browser-2.4.9.tgz#936139a1e0d280394988473a8a11d922d768f89e"
+"@angular/platform-browser@^2.4.10":
+  version "2.4.10"
+  resolved "http://registry.npm.taobao.org/@angular/platform-browser/download/@angular/platform-browser-2.4.10.tgz#cbf25608148fb4ffef96cc5005ba5d7b3e093906"
 
-"@angular/platform-server@^2.4.9":
-  version "2.4.9"
-  resolved "http://registry.npm.taobao.org/@angular/platform-server/download/@angular/platform-server-2.4.9.tgz#d3710cbd96d2b9f41f8800a6525c783628af8da3"
+"@angular/platform-server@^2.4.10":
+  version "2.4.10"
+  resolved "http://registry.npm.taobao.org/@angular/platform-server/download/@angular/platform-server-2.4.10.tgz#ede03075081f807ed83dd8ec92f2924858fb3455"
   dependencies:
     parse5 "^2.2.1"
 
@@ -83,9 +83,9 @@
     ws "1.1.1"
     xml2js "^0.4.17"
 
-"@ionic/storage@^2.0.0":
-  version "2.0.0"
-  resolved "http://registry.npm.taobao.org/@ionic/storage/download/@ionic/storage-2.0.0.tgz#28b7fb4deda642bcbdd037f9c95946828552103d"
+"@ionic/storage@^2.0.1":
+  version "2.0.1"
+  resolved "http://registry.npm.taobao.org/@ionic/storage/download/@ionic/storage-2.0.1.tgz#bb1a8c276007d008d7acdda426b56065b0fd3c0b"
   dependencies:
     "@types/localforage" "0.0.30"
     localforage "~1.4.2"
@@ -847,13 +847,13 @@ combined-stream@^1.0.5, combined-stream@~1.0.5:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@2.8.x:
+commander@2.8.x, commander@^2.8.1:
   version "2.8.1"
   resolved "http://registry.npm.taobao.org/commander/download/commander-2.8.1.tgz#06be367febfda0c330aa1e2a072d3dc9762425d4"
   dependencies:
     graceful-readlink ">= 1.0.0"
 
-commander@^2.8.1, commander@^2.9.0:
+commander@^2.9.0:
   version "2.9.0"
   resolved "http://registry.npm.taobao.org/commander/download/commander-2.9.0.tgz#9c99094176e12240cb22d6c5146098400fe0f7d4"
   dependencies:
@@ -1586,9 +1586,9 @@ ionic-angular@^2.2.0:
   version "2.2.0"
   resolved "http://registry.npm.taobao.org/ionic-angular/download/ionic-angular-2.2.0.tgz#5c48212d4c491626863ddce9292af0d3e6e2adca"
 
-ionic-native@^2.8.1:
-  version "2.8.1"
-  resolved "http://registry.npm.taobao.org/ionic-native/download/ionic-native-2.8.1.tgz#6e5b883933aa5878528a1b65f2ed75e697984646"
+ionic-native@^2.9.0:
+  version "2.9.0"
+  resolved "http://registry.npm.taobao.org/ionic-native/download/ionic-native-2.9.0.tgz#e9a36c850eda180918407c288e5d634978e32052"
   dependencies:
     rxjs "5.0.1"
 
@@ -2407,11 +2407,11 @@ punycode@^1.2.4, punycode@^1.4.1:
   version "1.4.1"
   resolved "http://registry.npm.taobao.org/punycode/download/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
-qs@6.2.0:
+qs@6.2.0, qs@^6.2.0:
   version "6.2.0"
   resolved "http://registry.npm.taobao.org/qs/download/qs-6.2.0.tgz#3b7848c03c2dece69a9522b0fae8c4126d745f3b"
 
-qs@^6.2.0, qs@~6.3.0:
+qs@~6.3.0:
   version "6.3.0"
   resolved "http://registry.npm.taobao.org/qs/download/qs-6.3.0.tgz#f403b264f23bc01228c74131b407f18d5ea5d442"
 
@@ -3356,6 +3356,6 @@ yargs@~3.10.0:
     decamelize "^1.0.0"
     window-size "0.1.0"
 
-zone.js@^0.8.0:
-  version "0.8.0"
-  resolved "http://registry.npm.taobao.org/zone.js/download/zone.js-0.8.0.tgz#d5fbfd04aa91401cd848b2baa3d00643b864dfa6"
+zone.js@^0.8.4:
+  version "0.8.4"
+  resolved "http://registry.npm.taobao.org/zone.js/download/zone.js-0.8.4.tgz#cc40ae5a1c879601c5ebba2096b5c80f0c4c3602"
