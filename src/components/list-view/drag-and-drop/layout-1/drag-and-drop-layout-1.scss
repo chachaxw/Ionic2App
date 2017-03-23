@@ -1,0 +1,50 @@
+/*  #Style Small item + header
+================================================*/
+drag-and-drop-layout-1 {
+  [header-bcg] {
+    height: 80px;
+    display: table;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    padding: 10px 15px;
+
+    .half {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 20px;
+
+      [icon-medium] {
+        color: theme-colors('mainColors', 'primary') !important;
+        font-size: icon-size('icon-medium') !important;
+      }
+
+      [span-medium] {
+        color: theme-colors('mainColors', 'primary') !important;
+        font-size: font-size-text('h1');
+      }
+
+      [header-title] {
+        text-transform: uppercase;
+        margin-bottom: 0;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .ion-md-menu:before {
+    content: "\eb2f";
+    font-family: "fontello";
+    color: theme-colors('mainColors', 'secondary') !important;
+    font-size: icon-size('icon-medium') !important;
+  }
+
+  ion-list {
+    margin-top: 80px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .item-inner {
+    margin-left: 0 !important;
+  }
+}
