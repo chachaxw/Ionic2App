@@ -1,4 +1,4 @@
-import { NgModule, ErrorHandler } from '@angular/core';
+import { NgModule, ErrorHandler, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
@@ -18,6 +18,8 @@ import { AppearanceAnimationLayout2 } from '../components/list-view/appearance-a
 import { AppearanceAnimationLayout3 } from '../components/list-view/appearance-animation/layout-3/appearance-animation-layout-3';
 import { AppearanceAnimationLayout4 } from '../components/list-view/appearance-animation/layout-4/appearance-animation-layout-4';
 import { AppearanceAnimationLayout5 } from '../components/list-view/appearance-animation/layout-5/appearance-animation-layout-5';
+import { DragAndDropLayout1 } from '../components/list-view/drag-and-drop/layout-1/drag-and-drop-layout-1';
+import { DragAndDropLayout2 } from '../components/list-view/drag-and-drop/layout-2/drag-and-drop-layout-2';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { AppearanceAnimationLayout5 } from '../components/list-view/appearance-a
     AppearanceAnimationLayout3,
     AppearanceAnimationLayout4,
     AppearanceAnimationLayout5,
+    DragAndDropLayout1,
+    DragAndDropLayout2,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -55,6 +59,14 @@ import { AppearanceAnimationLayout5 } from '../components/list-view/appearance-a
     AppearanceAnimationLayout3,
     AppearanceAnimationLayout4,
     AppearanceAnimationLayout5,
+    DragAndDropLayout1,
+    DragAndDropLayout2,
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
+  exports: [
+    // ElasticHeader
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
