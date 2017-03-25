@@ -1,0 +1,23 @@
+<!--Dragen and drop components-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle >
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-left>{{params.title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<!---Content-->
+<ion-content>
+  <drag-and-drop-layout-1
+    *ngIf="params.dragAndDropLayout1"
+    [data]="params.data"
+    [events]="params.events">
+  </drag-and-drop-layout-1>
+
+  <drag-and-drop-layout-2
+    *ngIf="params.dragAndDropLayout2"
+    [data]="params.data"
+    [events]="params.events">
+  </drag-and-drop-layout-2>
+</ion-content>
