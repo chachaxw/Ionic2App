@@ -6,6 +6,7 @@ import { ItemDetailsPage } from '../item-details/item-details';
 import { ItemDetailsPageSplashScreen } from '../item-details-splash-screen/item-details-splash-screen';
 import { ItemDetailsPageAppearanceAnimation } from '../item-details-appearance-animation/item-details-appearance-animation';
 import { ItemDetailsPageDragAndDrop } from '../item-details-drag-and-drop/item-details-drag-and-drop';
+import { ItemDetailsPageExpandable } from '../item-details-expandable/item-details-expandable';
 
 import { SplashScreenService } from '../../services/splash-screen-service';
 import { ListViewService } from '../../services/list-view-service';
@@ -62,6 +63,8 @@ export class ItemsPage {
       page = ItemDetailsPageAppearanceAnimation;
     } else if (value === "dragAndDrop") {
       page = ItemDetailsPageDragAndDrop;
+    } else if (value === "expandable") {
+      page = ItemDetailsPageExpandable;
     }
 
     return page;

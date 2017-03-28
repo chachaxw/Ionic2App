@@ -9,6 +9,7 @@ import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ItemDetailsPageSplashScreen } from '../pages/item-details-splash-screen/item-details-splash-screen';
 import { ItemDetailsPageAppearanceAnimation } from '../pages/item-details-appearance-animation/item-details-appearance-animation';
 import { ItemDetailsPageDragAndDrop } from '../pages/item-details-drag-and-drop/item-details-drag-and-drop';
+import { ItemDetailsPageExpandable } from '../pages/item-details-expandable/item-details-expandable';
 
 // Components
 import { SplashScreenLayout1 } from '../components/splash-screen/layout-1/splash-screen-layout-1';
@@ -41,6 +42,7 @@ import { DragAndDropLayout2 } from '../components/list-view/drag-and-drop/layout
     ItemDetailsPageDragAndDrop,
     DragAndDropLayout1,
     DragAndDropLayout2,
+    ItemDetailsPageExpandable,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -64,6 +66,7 @@ import { DragAndDropLayout2 } from '../components/list-view/drag-and-drop/layout
     ItemDetailsPageDragAndDrop,
     DragAndDropLayout1,
     DragAndDropLayout2,
+    ItemDetailsPageExpandable,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
