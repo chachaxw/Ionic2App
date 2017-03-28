@@ -11,10 +11,12 @@ import { SplashScreenService } from '../../services/splash-screen-service';
 import { ListViewService } from '../../services/list-view-service';
 import { ListViewAppearanceAnimationService } from '../../services/list-view-appearance-animation-service';
 import { ListViewDragAndDropService } from '../../services/list-view-drag-and-drop-service';
+import { ListViewExpandableService } from '../../services/list-view-expandable-service';
 
 @Component({
   templateUrl: 'items.html',
-  providers: [SplashScreenService, ListViewService, ListViewAppearanceAnimationService, ListViewDragAndDropService]
+  providers: [SplashScreenService, ListViewService, ListViewAppearanceAnimationService, ListViewDragAndDropService,
+    ListViewExpandableService]
 })
 
 export class ItemsPage {
@@ -31,13 +33,15 @@ export class ItemsPage {
     private splashScreenService: SplashScreenService,
     private listViewService: ListViewService,
     private listViewAppearanceAnimationService: ListViewAppearanceAnimationService,
-    private listViewDragAndDropService: ListViewDragAndDropService) {
+    private listViewDragAndDropService: ListViewDragAndDropService,
+    private listViewExpandableService: ListViewExpandableService) {
 
     this.listServices = {
       'splashScreens': splashScreenService,
       'listViews': listViewService,
       'appearanceAnimation': listViewAppearanceAnimationService,
       'dragAndDrop': listViewDragAndDropService,
+      'expandable': listViewExpandableService,
     };
 
     this.componentName = navParams.get('componentName');
