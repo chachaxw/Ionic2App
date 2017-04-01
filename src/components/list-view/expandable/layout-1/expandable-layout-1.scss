@@ -8,6 +8,12 @@ expandable-layout-1 {
   }
 
   .collapsible-header {
+    h2 {
+      color: #666 !important;
+    }
+    h3 {
+      color: #999 !important;
+    }
     ion-thumbnail {
       img {
         width: 130px;
