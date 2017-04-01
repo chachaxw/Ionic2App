@@ -1,0 +1,41 @@
+/*  #Style List big image
+===========================================*/
+expandable-layout-1 {
+  .social {
+    @include social;
+    float: right;
+    margin-top: 30px;
+  }
+
+  .collapsible-header {
+    ion-thumbnail {
+      img {
+        width: 130px;
+        height: 130px;
+      }
+    }
+  }
+
+  .item-accordion {
+    width: 100%;
+    height: 0;
+    display: block !important;
+    -webkit-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+    overflow: hidden;
+
+    img {
+      border-radius: $border-radius;
+    }
+
+    &.active {
+      height: 385px;
+      display: inherit;
+      overflow: visible;
+
+      > .item:last-child .item-inner {
+        border-bottom: 0;
+      }
+    }
+  }
+}
