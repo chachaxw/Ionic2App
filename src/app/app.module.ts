@@ -22,6 +22,8 @@ import { AppearanceAnimationLayout4 } from '../components/list-view/appearance-a
 import { AppearanceAnimationLayout5 } from '../components/list-view/appearance-animation/layout-5/appearance-animation-layout-5';
 import { DragAndDropLayout1 } from '../components/list-view/drag-and-drop/layout-1/drag-and-drop-layout-1';
 import { DragAndDropLayout2 } from '../components/list-view/drag-and-drop/layout-2/drag-and-drop-layout-2';
+import { ExpandableLayout1 } from '../components/list-view/expandable/layout-1/expandable-layout-1';
+import { ExpandableLayout2 } from '../components/list-view/expandable/layout-2/expandable-layout-2';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { DragAndDropLayout2 } from '../components/list-view/drag-and-drop/layout
     DragAndDropLayout1,
     DragAndDropLayout2,
     ItemDetailsPageExpandable,
+    ExpandableLayout1,
+    ExpandableLayout2,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -67,6 +71,8 @@ import { DragAndDropLayout2 } from '../components/list-view/drag-and-drop/layout
     DragAndDropLayout1,
     DragAndDropLayout2,
     ItemDetailsPageExpandable,
+    ExpandableLayout1,
+    ExpandableLayout2,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
