@@ -12,14 +12,17 @@ google-card-layout-1 {
     line-height: normal !important;
     margin-bottom: 0;
     margin-top: 0;
+    color: #333 !important;
   }
 
   [card-subtitle] {
     margin: 0;
+    color: #666 !important;
   }
 
   [card-body-text] {
     padding-top: 30px;
+    color: #999 !important;
   }
 
   .swiper-slide {
