@@ -1,0 +1,47 @@
+<!--Theme Styled cards-->
+<ion-list no-margin>
+  <ion-slides (ionSlideDidChange)="slideHasChanged($event, i)" *ngFor="let item of data.items;let i = index">
+    <ion-slide>
+      <ion-card text-left class="card" (click)="onEvent('onItemClick', item.title, $event)">
+        <div left class="card-img">
+          <img src="{{item.image}}" />
+        </div>
+        <!--Card-content-->
+        <ion-card-content>
+          <ion-icon>
+            <i class="icon {{item.iconSlider}}"></i>
+          </ion-icon>
+          <ion-card-title no-padding>
+            <h2 card-title>{{item.title}}</h2>
+          </ion-card-title>
+          <h3 card-subtitle>{{item.description}}</h3>
+          <h3 card-subtitle>{{item.shortDescription}}</h3>
+          <p card-body-text>{{item.longDescription}}</p>
+          <!---Social share-->
+          <div right class="social">
+            <ion-icon>
+              <i icon-small ng-if="group.iconLike" class="icon {{item.iconLike}}" (click)="onEvent('onLike', item, $event)"></i>
+            </ion-icon>
+            <ion-icon>
+              <i icon-small ng-if="item.iconFavorite" class="icon {{item.iconFavorite}}" (click)="onEvent('onFavorite', item, $event)"></i>
+            </ion-icon>
+            <ion-icon>
+              <i icon-small ng-if="item.iconShare" class="icon {{item.iconShare}}" (click)="onEvent('onShare', item, $event)"></i>
+            </ion-icon>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <h1 wizard-title (click)="onClickEvent(i)">UNDO</h1>
+    </ion-slide>
+    <ion-slide>
+    </ion-slide>
+  </ion-slides>
+</ion-list>
+<!-- Fab Button -->
+<ion-fab bottom right>
+  <button button-ion-fab ion-fab (click)="onEvent('onFab', data, $event)">
+    <ion-icon name="add"></ion-icon>
+  </button>
+</ion-fab>

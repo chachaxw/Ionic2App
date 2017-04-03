@@ -7,17 +7,19 @@ import { ItemDetailsPageSplashScreen } from '../item-details-splash-screen/item-
 import { ItemDetailsPageAppearanceAnimation } from '../item-details-appearance-animation/item-details-appearance-animation';
 import { ItemDetailsPageDragAndDrop } from '../item-details-drag-and-drop/item-details-drag-and-drop';
 import { ItemDetailsPageExpandable } from '../item-details-expandable/item-details-expandable';
+import { ItemDetailsPageGoogleCard } from '../item-details-google-card/item-details-google-card';
 
 import { SplashScreenService } from '../../services/splash-screen-service';
 import { ListViewService } from '../../services/list-view-service';
 import { ListViewAppearanceAnimationService } from '../../services/list-view-appearance-animation-service';
 import { ListViewDragAndDropService } from '../../services/list-view-drag-and-drop-service';
 import { ListViewExpandableService } from '../../services/list-view-expandable-service';
+import { ListViewGoogleCardsService } from '../../services/list-view-google-card-service';
 
 @Component({
   templateUrl: 'items.html',
   providers: [SplashScreenService, ListViewService, ListViewAppearanceAnimationService, ListViewDragAndDropService,
-    ListViewExpandableService]
+    ListViewExpandableService, ListViewGoogleCardsService]
 })
 
 export class ItemsPage {
@@ -35,7 +37,8 @@ export class ItemsPage {
     private listViewService: ListViewService,
     private listViewAppearanceAnimationService: ListViewAppearanceAnimationService,
     private listViewDragAndDropService: ListViewDragAndDropService,
-    private listViewExpandableService: ListViewExpandableService) {
+    private listViewExpandableService: ListViewExpandableService,
+    private listViewGoogleCardsService: ListViewGoogleCardsService) {
 
     this.listServices = {
       'splashScreens': splashScreenService,
@@ -43,6 +46,7 @@ export class ItemsPage {
       'appearanceAnimation': listViewAppearanceAnimationService,
       'dragAndDrop': listViewDragAndDropService,
       'expandable': listViewExpandableService,
+      'googleCards': listViewGoogleCardsService,
     };
 
     this.componentName = navParams.get('componentName');
@@ -65,6 +69,8 @@ export class ItemsPage {
       page = ItemDetailsPageDragAndDrop;
     } else if (value === "expandable") {
       page = ItemDetailsPageExpandable;
+    } else if (value === "googleCards") {
+      page = ItemDetailsPageGoogleCard;
     }
 
     return page;

@@ -10,6 +10,7 @@ import { ItemDetailsPageSplashScreen } from '../pages/item-details-splash-screen
 import { ItemDetailsPageAppearanceAnimation } from '../pages/item-details-appearance-animation/item-details-appearance-animation';
 import { ItemDetailsPageDragAndDrop } from '../pages/item-details-drag-and-drop/item-details-drag-and-drop';
 import { ItemDetailsPageExpandable } from '../pages/item-details-expandable/item-details-expandable';
+import { ItemDetailsPageGoogleCard } from '../pages/item-details-google-card/item-details-google-card';
 
 // Components
 import { SplashScreenLayout1 } from '../components/splash-screen/layout-1/splash-screen-layout-1';
@@ -24,6 +25,7 @@ import { DragAndDropLayout1 } from '../components/list-view/drag-and-drop/layout
 import { DragAndDropLayout2 } from '../components/list-view/drag-and-drop/layout-2/drag-and-drop-layout-2';
 import { ExpandableLayout1 } from '../components/list-view/expandable/layout-1/expandable-layout-1';
 import { ExpandableLayout2 } from '../components/list-view/expandable/layout-2/expandable-layout-2';
+import { GoogleCardLayout1 } from '../components/list-view/google-card/layout-1/google-card-layout-1';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { ExpandableLayout2 } from '../components/list-view/expandable/layout-2/e
     ItemDetailsPageExpandable,
     ExpandableLayout1,
     ExpandableLayout2,
+    ItemDetailsPageGoogleCard,
+    GoogleCardLayout1,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -73,6 +77,8 @@ import { ExpandableLayout2 } from '../components/list-view/expandable/layout-2/e
     ItemDetailsPageExpandable,
     ExpandableLayout1,
     ExpandableLayout2,
+    ItemDetailsPageGoogleCard,
+    GoogleCardLayout1,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
