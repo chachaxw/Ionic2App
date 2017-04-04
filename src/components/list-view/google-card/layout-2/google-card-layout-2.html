@@ -1,0 +1,36 @@
+<!--Theme Styled cards 2-->
+<ion-list no-margin>
+  <ion-slides (ionSlideDidChange)="slideHasChanged($event, i)" *ngFor="let item of data.items;let i = index">
+    <ion-slide>
+      <ion-card text-right card-bcg (click)="onEvent('onItemClick', item.title, $event)">
+        <div class="card-image">
+          <img images-filter src="{{item.image}}" />
+          <h2 card-title>{{item.titleHeader}}</h2>
+        </div>
+        <ion-card-content>
+          <ion-card-title>
+            <h1 card-subtitle>{{item.title}}</h1>
+          </ion-card-title>
+          <p card-body-text>{{item.description}}</p>
+        </ion-card-content>
+        <button ion-button default-button right (click)="onEvent('onShare', item, $event)">
+          {{item.shareButton}}
+        </button>
+        <button ion-button default-button right (click)="onEvent('onExplore', item, $event)">
+          {{item.button}}
+        </button>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <h1 wizard-title (click)="onClickEvent(i)">UNDO</h1>
+    </ion-slide>
+    <ion-slide>
+    </ion-slide>
+  </ion-slides>
+</ion-list>
+<!--Fab Button-->
+<ion-fab bottom right>
+  <button button-ion-fab ion-fab (click)="onEvent('onFab', data, $event)">
+    <ion-icon name="add"></ion-icon>
+  </button>
+</ion-fab>
