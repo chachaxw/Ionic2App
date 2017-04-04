@@ -1,9 +1,12 @@
 /*  #Style Styled cards 2
 ================================================*/
 google-card-layout-2 {
+  ion-list {
+    background-color: #f5f5f5;
+  }
   .card-image {
     position: relative;
-    @include darkening-blend-mode;
+    // @include darkening-blend-mode;
     &::before {
       z-index: 3;
     }

@@ -26,6 +26,7 @@ import { DragAndDropLayout2 } from '../components/list-view/drag-and-drop/layout
 import { ExpandableLayout1 } from '../components/list-view/expandable/layout-1/expandable-layout-1';
 import { ExpandableLayout2 } from '../components/list-view/expandable/layout-2/expandable-layout-2';
 import { GoogleCardLayout1 } from '../components/list-view/google-card/layout-1/google-card-layout-1';
+import { GoogleCardLayout2 } from '../components/list-view/google-card/layout-2/google-card-layout-2';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { GoogleCardLayout1 } from '../components/list-view/google-card/layout-1/
     ExpandableLayout2,
     ItemDetailsPageGoogleCard,
     GoogleCardLayout1,
+    GoogleCardLayout2,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -79,6 +81,7 @@ import { GoogleCardLayout1 } from '../components/list-view/google-card/layout-1/
     ExpandableLayout2,
     ItemDetailsPageGoogleCard,
     GoogleCardLayout1,
+    GoogleCardLayout2,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

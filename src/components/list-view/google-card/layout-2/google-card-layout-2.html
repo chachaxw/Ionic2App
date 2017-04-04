@@ -2,7 +2,7 @@
 <ion-list no-margin>
   <ion-slides (ionSlideDidChange)="slideHasChanged($event, i)" *ngFor="let item of data.items;let i = index">
     <ion-slide>
-      <ion-card text-right card-bcg (click)="onEvent('onItemClick', item.title, $event)">
+      <ion-card text-right (click)="onEvent('onItemClick', item.title, $event)">
         <div class="card-image">
           <img images-filter src="{{item.image}}" />
           <h2 card-title>{{item.titleHeader}}</h2>
