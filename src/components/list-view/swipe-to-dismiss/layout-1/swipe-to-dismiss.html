@@ -1,0 +1,56 @@
+<!--Theme Small item + header-->
+<ion-toolbar header-bcg>
+  <ion-item no-padding no-lines >
+  <ion-icon icon-large item-left>
+    <i class="icon {{data.iconPlay}}"></i>
+  </ion-icon>
+  <h1 header-title>{{data.title}}</h1>
+  <h2 header-subtitle>{{data.description}}</h2>
+  <span span-medium>{{data.shortDescription}}</span>
+  <div right class="social">
+    <ion-icon>
+      <i class="icon icon-thumb-up" (click)="onEvent('onLike', item, $event)"></i>
+    </ion-icon>
+    <ion-icon>
+      <i class="icon icon-heart" (click)="onEvent('onFavorite', item, $event)"></i>
+    </ion-icon>
+    <ion-icon>
+      <i class="icon icon-share-variant" (click)="onEvent('onShare', item, $event)"></i>
+    </ion-icon>
+  </div>
+</ion-item>
+</ion-toolbar>
+<!--Swipe To Dismiss -->
+<ion-list>
+  <ion-item-sliding swiped-item-bcg *ngFor="let item of data.items" #slidingItem>
+    <button ion-item (click)="onEvent('onItemClick', item.title, $event)">
+      <ion-avatar item-left icon-right>
+        <img src="{{item.image}}">
+      </ion-avatar>
+      <h2 item-title>{{item.title}}</h2>
+      <h3 item-subtitle>{{item.description}}</h3>
+      <span item-right span-small>{{item.shortDescription}}</span>
+      <ion-icon icon-medium item-right>
+        <i class="icon icon-play"></i>
+      </ion-icon>
+    </button>
+    <ion-item-options swiped-item-bcg no-lines>
+      <button swiped-item-bcg (click)="delete(item)">
+          <ion-icon icon-medium>
+            <i class="icon icon-delete"></i>
+          </ion-icon>
+      </button>
+      <button swiped-item-bcg (click)="undo(slidingItem)">
+        <ion-icon icon-medium>
+          <i class="icon icon-undo-variant"></i>
+        </ion-icon>
+    </button>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+<!-- Fab Button -->
+<ion-fab bottom right>
+  <button button-ion-fab ion-fab (click)="onEvent('onFab', item, $event)">
+    <ion-icon name="add"></ion-icon>
+  </button>
+</ion-fab>

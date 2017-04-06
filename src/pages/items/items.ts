@@ -15,11 +15,12 @@ import { ListViewAppearanceAnimationService } from '../../services/list-view-app
 import { ListViewDragAndDropService } from '../../services/list-view-drag-and-drop-service';
 import { ListViewExpandableService } from '../../services/list-view-expandable-service';
 import { ListViewGoogleCardsService } from '../../services/list-view-google-card-service';
+import { ListViewSwipeToDismissService } from '../../services/list-view-swipe-to-dismiss-service';
 
 @Component({
   templateUrl: 'items.html',
   providers: [SplashScreenService, ListViewService, ListViewAppearanceAnimationService, ListViewDragAndDropService,
-    ListViewExpandableService, ListViewGoogleCardsService]
+    ListViewExpandableService, ListViewGoogleCardsService, ListViewSwipeToDismissService]
 })
 
 export class ItemsPage {
@@ -38,7 +39,8 @@ export class ItemsPage {
     private listViewAppearanceAnimationService: ListViewAppearanceAnimationService,
     private listViewDragAndDropService: ListViewDragAndDropService,
     private listViewExpandableService: ListViewExpandableService,
-    private listViewGoogleCardsService: ListViewGoogleCardsService) {
+    private listViewGoogleCardsService: ListViewGoogleCardsService,
+    private listViewSwipeToDismissService: ListViewSwipeToDismissService) {
 
     this.listServices = {
       'splashScreens': splashScreenService,
@@ -47,6 +49,7 @@ export class ItemsPage {
       'dragAndDrop': listViewDragAndDropService,
       'expandable': listViewExpandableService,
       'googleCards': listViewGoogleCardsService,
+      'swipeToDismiss': listViewSwipeToDismissService,
     };
 
     this.componentName = navParams.get('componentName');
