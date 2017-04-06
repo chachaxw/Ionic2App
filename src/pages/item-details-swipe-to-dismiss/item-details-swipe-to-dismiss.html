@@ -1,0 +1,23 @@
+<!--SwipeToDismiss component-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle >
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-left>{{params.title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<!--Content-->
+<ion-content>
+  <swipe-to-dismiss-layout-1
+    *ngIf="params.swipeToDismissLayout1"
+    [data]="params.data"
+    [events]="params.events">
+  </swipe-to-dismiss-layout-1>
+
+  <swipe-to-dismiss-layout-2
+    *ngIf="params.swipeToDismissLayout2"
+    [data]="params.data"
+    [events]="params.events">
+  </swipe-to-dismiss-layout-2>
+</ion-content>

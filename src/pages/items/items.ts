@@ -8,6 +8,7 @@ import { ItemDetailsPageAppearanceAnimation } from '../item-details-appearance-a
 import { ItemDetailsPageDragAndDrop } from '../item-details-drag-and-drop/item-details-drag-and-drop';
 import { ItemDetailsPageExpandable } from '../item-details-expandable/item-details-expandable';
 import { ItemDetailsPageGoogleCard } from '../item-details-google-card/item-details-google-card';
+import { ItemDetailsPageSwipeToDismiss } from '../item-details-swipe-to-dismiss/item-details-swipe-to-dismiss';
 
 import { SplashScreenService } from '../../services/splash-screen-service';
 import { ListViewService } from '../../services/list-view-service';
@@ -74,6 +75,8 @@ export class ItemsPage {
       page = ItemDetailsPageExpandable;
     } else if (value === "googleCards") {
       page = ItemDetailsPageGoogleCard;
+    } else if (value === "swipeToDismiss") {
+      page = ItemDetailsPageSwipeToDismiss;
     }
 
     return page;
