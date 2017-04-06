@@ -1,0 +1,36 @@
+/*  #Theme Products + CTA footer
+===========================================*/
+swipe-to-dismiss-layout-2 {
+  [item-bcg] {
+    border-top: none !important;
+    ion-label {
+      white-space: inherit;
+    }
+  }
+
+  .new-price {
+    margin-top: 35px !important;
+  }
+
+  .old-price {
+    font-weight: 400;
+    top: 15px;
+    position: absolute;
+    right: 5px;
+    text-decoration: line-through;
+
+    &[span-small] {
+      color: theme-colors('textColors', 'secondary', 'opacity60');
+      font-size: font-size-text('h5');
+    }
+  }
+
+  ion-item-options {
+    border-bottom: 1px solid theme-colors('mainColors', 'accent') !important;
+  }
+
+  ion-thumbnail img {
+    width: 90px !important;
+    height: 90px !important;
+  }
+}

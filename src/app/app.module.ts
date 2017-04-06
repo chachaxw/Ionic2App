@@ -27,7 +27,8 @@ import { ExpandableLayout1 } from '../components/list-view/expandable/layout-1/e
 import { ExpandableLayout2 } from '../components/list-view/expandable/layout-2/expandable-layout-2';
 import { GoogleCardLayout1 } from '../components/list-view/google-card/layout-1/google-card-layout-1';
 import { GoogleCardLayout2 } from '../components/list-view/google-card/layout-2/google-card-layout-2';
-import { SwipeToDismissLayout1 } from '../components/list-view/swipe-to-dismiss/swipe-to-dismiss';
+import { SwipeToDismissLayout1 } from '../components/list-view/swipe-to-dismiss/swipe-to-dismiss-layout-1';
+import { SwipeToDismissLayout2 } from '../components/list-view/swipe-to-dismiss/swipe-to-dismiss-layout-2';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { SwipeToDismissLayout1 } from '../components/list-view/swipe-to-dismiss/
     ItemDetailsPageGoogleCard,
     GoogleCardLayout1,
     GoogleCardLayout2,
-    SwipeToDismissLayout1
+    SwipeToDismissLayout1,
+    SwipeToDismissLayout2
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -84,7 +86,8 @@ import { SwipeToDismissLayout1 } from '../components/list-view/swipe-to-dismiss/
     ItemDetailsPageGoogleCard,
     GoogleCardLayout1,
     GoogleCardLayout2,
-    SwipeToDismissLayout1
+    SwipeToDismissLayout1,
+    SwipeToDismissLayout2
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
