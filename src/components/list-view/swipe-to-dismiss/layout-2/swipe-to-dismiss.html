@@ -1,7 +1,7 @@
 <!-- Themes Swipe To Dismiss Products + CTA footer -->
 <ion-list no-margin>
   <ion-item-sliding *ngFor="let item of data.items" #slidingItem>
-    <ion-item item-bcg no-padding no-margina (click)="onEvent('onItemClick', item.title, $event)">
+    <ion-item no-padding no-margina (click)="onEvent('onItemClick', item.title, $event)">
       <ion-thumbnail no-margin item-left>
         <img src="{{item.image}}">
       </ion-thumbnail>
@@ -10,7 +10,7 @@
       <span span-small item-right class="old-price">{{item.oldPrice}}</span>
       <span span-medium item-right class="new-price">{{item.newPrice}}</span>
     </ion-item>
-    <ion-item-options no-lines swiped-item-bcg >
+    <ion-item-options no-lines>
       <button (click)="delete(item)">
         <ion-icon icon-medium>
           <i class="icon icon-delete"></i>

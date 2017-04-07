@@ -11,6 +11,7 @@ import { ItemDetailsPageAppearanceAnimation } from '../pages/item-details-appear
 import { ItemDetailsPageDragAndDrop } from '../pages/item-details-drag-and-drop/item-details-drag-and-drop';
 import { ItemDetailsPageExpandable } from '../pages/item-details-expandable/item-details-expandable';
 import { ItemDetailsPageGoogleCard } from '../pages/item-details-google-card/item-details-google-card';
+import { ItemDetailsPageSwipeToDismiss } from '../pages/item-details-swipe-to-dismiss/item-details-swipe-to-dismiss';
 
 // Components
 import { SplashScreenLayout1 } from '../components/splash-screen/layout-1/splash-screen-layout-1';
@@ -27,8 +28,8 @@ import { ExpandableLayout1 } from '../components/list-view/expandable/layout-1/e
 import { ExpandableLayout2 } from '../components/list-view/expandable/layout-2/expandable-layout-2';
 import { GoogleCardLayout1 } from '../components/list-view/google-card/layout-1/google-card-layout-1';
 import { GoogleCardLayout2 } from '../components/list-view/google-card/layout-2/google-card-layout-2';
-import { SwipeToDismissLayout1 } from '../components/list-view/swipe-to-dismiss/swipe-to-dismiss-layout-1';
-import { SwipeToDismissLayout2 } from '../components/list-view/swipe-to-dismiss/swipe-to-dismiss-layout-2';
+import { SwipeToDismissLayout1 } from '../components/list-view/swipe-to-dismiss/layout-1/swipe-to-dismiss-layout-1';
+import { SwipeToDismissLayout2 } from '../components/list-view/swipe-to-dismiss/layout-2/swipe-to-dismiss-layout-2';
 
 @NgModule({
   declarations: [
@@ -55,8 +56,9 @@ import { SwipeToDismissLayout2 } from '../components/list-view/swipe-to-dismiss/
     ItemDetailsPageGoogleCard,
     GoogleCardLayout1,
     GoogleCardLayout2,
+    ItemDetailsPageSwipeToDismiss,
     SwipeToDismissLayout1,
-    SwipeToDismissLayout2
+    SwipeToDismissLayout2,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -86,8 +88,9 @@ import { SwipeToDismissLayout2 } from '../components/list-view/swipe-to-dismiss/
     ItemDetailsPageGoogleCard,
     GoogleCardLayout1,
     GoogleCardLayout2,
+    ItemDetailsPageSwipeToDismiss,
     SwipeToDismissLayout1,
-    SwipeToDismissLayout2
+    SwipeToDismissLayout2,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
