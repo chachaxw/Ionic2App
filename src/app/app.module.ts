@@ -12,6 +12,7 @@ import { ItemDetailsPageDragAndDrop } from '../pages/item-details-drag-and-drop/
 import { ItemDetailsPageExpandable } from '../pages/item-details-expandable/item-details-expandable';
 import { ItemDetailsPageGoogleCard } from '../pages/item-details-google-card/item-details-google-card';
 import { ItemDetailsPageSwipeToDismiss } from '../pages/item-details-swipe-to-dismiss/item-details-swipe-to-dismiss';
+import { ItemDetailsPageParallax } from '../pages/item-details-parallax/item-details-parallax';
 
 // Components
 import { SplashScreenLayout1 } from '../components/splash-screen/layout-1/splash-screen-layout-1';
@@ -59,6 +60,7 @@ import { SwipeToDismissLayout2 } from '../components/list-view/swipe-to-dismiss/
     ItemDetailsPageSwipeToDismiss,
     SwipeToDismissLayout1,
     SwipeToDismissLayout2,
+    ItemDetailsPageParallax,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -91,6 +93,7 @@ import { SwipeToDismissLayout2 } from '../components/list-view/swipe-to-dismiss/
     ItemDetailsPageSwipeToDismiss,
     SwipeToDismissLayout1,
     SwipeToDismissLayout2,
+    ItemDetailsPageParallax,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
