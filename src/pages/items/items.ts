@@ -9,6 +9,7 @@ import { ItemDetailsPageDragAndDrop } from '../item-details-drag-and-drop/item-d
 import { ItemDetailsPageExpandable } from '../item-details-expandable/item-details-expandable';
 import { ItemDetailsPageGoogleCard } from '../item-details-google-card/item-details-google-card';
 import { ItemDetailsPageSwipeToDismiss } from '../item-details-swipe-to-dismiss/item-details-swipe-to-dismiss';
+import { ItemDetailsPageParallax } from '../item-details-parallax/item-details-parallax';
 
 import { SplashScreenService } from '../../services/splash-screen-service';
 import { ListViewService } from '../../services/list-view-service';
@@ -17,11 +18,12 @@ import { ListViewDragAndDropService } from '../../services/list-view-drag-and-dr
 import { ListViewExpandableService } from '../../services/list-view-expandable-service';
 import { ListViewGoogleCardsService } from '../../services/list-view-google-card-service';
 import { ListViewSwipeToDismissService } from '../../services/list-view-swipe-to-dismiss-service';
+import { ParallaxService } from '../../services/parallax-service';
 
 @Component({
   templateUrl: 'items.html',
   providers: [SplashScreenService, ListViewService, ListViewAppearanceAnimationService, ListViewDragAndDropService,
-    ListViewExpandableService, ListViewGoogleCardsService, ListViewSwipeToDismissService]
+    ListViewExpandableService, ListViewGoogleCardsService, ListViewSwipeToDismissService, ParallaxService]
 })
 
 export class ItemsPage {
@@ -35,6 +37,7 @@ export class ItemsPage {
   constructor(
     navParams: NavParams,
     public navCtrl: NavController,
+    private parallaxService: ParallaxService,
     private splashScreenService: SplashScreenService,
     private listViewService: ListViewService,
     private listViewAppearanceAnimationService: ListViewAppearanceAnimationService,
@@ -51,6 +54,7 @@ export class ItemsPage {
       'expandable': listViewExpandableService,
       'googleCards': listViewGoogleCardsService,
       'swipeToDismiss': listViewSwipeToDismissService,
+      'parallaxService': parallaxService,
     };
 
     this.componentName = navParams.get('componentName');
@@ -77,6 +81,8 @@ export class ItemsPage {
       page = ItemDetailsPageGoogleCard;
     } else if (value === "swipeToDismiss") {
       page = ItemDetailsPageSwipeToDismiss;
+    } else if (value === "parallaxService") {
+      page = ItemDetailsPageParallax;
     }
 
     return page;
