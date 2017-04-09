@@ -22,7 +22,7 @@
 </ion-toolbar>
 <!--Swipe To Dismiss -->
 <ion-list>
-  <ion-item-sliding swiped-item-bcg *ngFor="let item of data.items" #slidingItem>
+  <ion-item-sliding *ngFor="let item of data.items" #slidingItem>
     <button ion-item (click)="onEvent('onItemClick', item.title, $event)">
       <ion-avatar item-left icon-right>
         <img src="{{item.image}}">

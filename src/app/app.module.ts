@@ -32,6 +32,7 @@ import { GoogleCardLayout2 } from '../components/list-view/google-card/layout-2/
 import { SwipeToDismissLayout1 } from '../components/list-view/swipe-to-dismiss/layout-1/swipe-to-dismiss-layout-1';
 import { SwipeToDismissLayout2 } from '../components/list-view/swipe-to-dismiss/layout-2/swipe-to-dismiss-layout-2';
 import { ParallaxLayout1 } from '../components/parallax/layout-1/parallax-layout-1';
+import { ParallaxLayout2 } from '../components/parallax/layout-2/parallax-layout-2';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { ParallaxLayout1 } from '../components/parallax/layout-1/parallax-layout
     SwipeToDismissLayout2,
     ItemDetailsPageParallax,
     ParallaxLayout1,
+    ParallaxLayout2,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -97,6 +99,7 @@ import { ParallaxLayout1 } from '../components/parallax/layout-1/parallax-layout
     SwipeToDismissLayout2,
     ItemDetailsPageParallax,
     ParallaxLayout1,
+    ParallaxLayout2,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
