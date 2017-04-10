@@ -13,6 +13,7 @@ import { ItemDetailsPageExpandable } from '../pages/item-details-expandable/item
 import { ItemDetailsPageGoogleCard } from '../pages/item-details-google-card/item-details-google-card';
 import { ItemDetailsPageSwipeToDismiss } from '../pages/item-details-swipe-to-dismiss/item-details-swipe-to-dismiss';
 import { ItemDetailsPageParallax } from '../pages/item-details-parallax/item-details-parallax';
+import { ItemDetailsPageLoginAndRegister } from '../pages/item-details-login-register/item-details-login-register';
 
 // Components
 import { SplashScreenLayout1 } from '../components/splash-screen/layout-1/splash-screen-layout-1';
@@ -65,6 +66,7 @@ import { ParallaxLayout2 } from '../components/parallax/layout-2/parallax-layout
     ItemDetailsPageParallax,
     ParallaxLayout1,
     ParallaxLayout2,
+    ItemDetailsPageLoginAndRegister,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -100,6 +102,7 @@ import { ParallaxLayout2 } from '../components/parallax/layout-2/parallax-layout
     ItemDetailsPageParallax,
     ParallaxLayout1,
     ParallaxLayout2,
+    ItemDetailsPageLoginAndRegister,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
