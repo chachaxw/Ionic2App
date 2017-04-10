@@ -30,6 +30,14 @@ expandable-layout-1 {
     transition: all 300ms ease-in;
     overflow: hidden;
 
+    [subitem-title] {
+      color: #555;
+    }
+
+    [subitem-subtitle] {
+      color: #777;
+    }
+
     img {
       border-radius: $border-radius;
     }

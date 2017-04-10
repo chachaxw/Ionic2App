@@ -54,7 +54,7 @@ export class ItemsPage {
       'expandable': listViewExpandableService,
       'googleCards': listViewGoogleCardsService,
       'swipeToDismiss': listViewSwipeToDismissService,
-      'parallaxService': parallaxService,
+      'parallax': parallaxService,
     };
 
     this.componentName = navParams.get('componentName');
@@ -81,9 +81,11 @@ export class ItemsPage {
       page = ItemDetailsPageGoogleCard;
     } else if (value === "swipeToDismiss") {
       page = ItemDetailsPageSwipeToDismiss;
-    } else if (value === "parallaxService") {
+    } else if (value === "parallax") {
       page = ItemDetailsPageParallax;
     }
+
+    console.log(page);
 
     return page;
   }
