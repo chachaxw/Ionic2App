@@ -10,6 +10,7 @@ import { ItemDetailsPageExpandable } from '../item-details-expandable/item-detai
 import { ItemDetailsPageGoogleCard } from '../item-details-google-card/item-details-google-card';
 import { ItemDetailsPageSwipeToDismiss } from '../item-details-swipe-to-dismiss/item-details-swipe-to-dismiss';
 import { ItemDetailsPageParallax } from '../item-details-parallax/item-details-parallax';
+import { ItemDetailsPageLoginAndRegister } from '../item-details-login-register/item-details-login-register';
 
 import { SplashScreenService } from '../../services/splash-screen-service';
 import { ListViewService } from '../../services/list-view-service';
@@ -19,11 +20,12 @@ import { ListViewExpandableService } from '../../services/list-view-expandable-s
 import { ListViewGoogleCardsService } from '../../services/list-view-google-card-service';
 import { ListViewSwipeToDismissService } from '../../services/list-view-swipe-to-dismiss-service';
 import { ParallaxService } from '../../services/parallax-service';
+import { LoginRegisterService } from '../../services/login-register-service';
 
 @Component({
   templateUrl: 'items.html',
   providers: [SplashScreenService, ListViewService, ListViewAppearanceAnimationService, ListViewDragAndDropService,
-    ListViewExpandableService, ListViewGoogleCardsService, ListViewSwipeToDismissService, ParallaxService]
+    ListViewExpandableService, ListViewGoogleCardsService, ListViewSwipeToDismissService, ParallaxService, LoginRegisterService]
 })
 
 export class ItemsPage {
@@ -37,24 +39,26 @@ export class ItemsPage {
   constructor(
     navParams: NavParams,
     public navCtrl: NavController,
+    private listViewService: ListViewService,
     private parallaxService: ParallaxService,
     private splashScreenService: SplashScreenService,
-    private listViewService: ListViewService,
-    private listViewAppearanceAnimationService: ListViewAppearanceAnimationService,
+    private loginRegisterService: LoginRegisterService,
     private listViewDragAndDropService: ListViewDragAndDropService,
     private listViewExpandableService: ListViewExpandableService,
     private listViewGoogleCardsService: ListViewGoogleCardsService,
-    private listViewSwipeToDismissService: ListViewSwipeToDismissService) {
+    private listViewSwipeToDismissService: ListViewSwipeToDismissService,
+    private listViewAppearanceAnimationService: ListViewAppearanceAnimationService) {
 
     this.listServices = {
-      'splashScreens': splashScreenService,
+      'parallax': parallaxService,
       'listViews': listViewService,
-      'appearanceAnimation': listViewAppearanceAnimationService,
+      'splashScreens': splashScreenService,
+      'loginPages': loginRegisterService,
       'dragAndDrop': listViewDragAndDropService,
       'expandable': listViewExpandableService,
       'googleCards': listViewGoogleCardsService,
       'swipeToDismiss': listViewSwipeToDismissService,
-      'parallax': parallaxService,
+      'appearanceAnimation': listViewAppearanceAnimationService,
     };
 
     this.componentName = navParams.get('componentName');
@@ -83,9 +87,9 @@ export class ItemsPage {
       page = ItemDetailsPageSwipeToDismiss;
     } else if (value === "parallax") {
       page = ItemDetailsPageParallax;
+    } else if (value === "loginPages") {
+      page = ItemDetailsPageLoginAndRegister;
     }
-
-    console.log(page);
 
     return page;
   }
