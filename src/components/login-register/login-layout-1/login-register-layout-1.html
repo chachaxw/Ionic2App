@@ -1,0 +1,24 @@
+<!-- Themes Login + logo -->
+<ion-list no-margin>
+  <img [src]="data.logo" />
+  <div class="form">
+    <ion-item no-padding>
+      <ion-label floating>{{data.username}}</ion-label>
+      <ion-input type="text" [(ngModel)]="username"></ion-input>
+    </ion-item>
+
+    <ion-item no-padding>
+      <ion-label floating>{{data.password}}</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+    <button ion-button right default-button (click)="onEvent('onLogin')">{{data.login}}</button>
+    <button ion-button right default-button (click)="onEvent('onRegister')">{{data.register}}</button>
+  </div>
+  <!--Social Button-->
+  <div class="social">
+    <button ion-button color="facebook" (click)="onEvent('onFacebook')">Facebook</button>
+    <button ion-button color="twitter" (click)="onEvent('onTwitter')">Twitter</button>
+    <button ion-button color="google" (click)="onEvent('onGoogle')">Google</button>
+    <button ion-button color="pinterest" (click)="onEvent('onPinterest')">Pinterest</button>
+  </div>
+</ion-list>
