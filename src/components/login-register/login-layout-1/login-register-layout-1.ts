@@ -16,10 +16,10 @@ export class LoginLayout1 {
 
   onEvent = (event: string): void => {
     if (this.events[event]) {
-        this.events[event]({
-            'username' : this.username,
-            'password' : this.password
-        });
+      this.events[event]({
+        'username' : this.username,
+        'password' : this.password
+      });
     }
   }
 }

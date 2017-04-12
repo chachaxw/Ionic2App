@@ -1,0 +1,35 @@
+<!-- Themes Register + logo -->
+<ion-list no-margin>
+  <div class="form">
+    <h1 title text-right>{{data.register}}</h1>
+    <ion-item no-padding>
+      <ion-label floating>{{data.username}}</ion-label>
+      <ion-input type="text" [(ngModel)]="username"></ion-input>
+    </ion-item>
+
+    <ion-item no-padding>
+      <ion-label floating>{{data.password}}</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+
+    <ion-item no-padding>
+      <ion-label floating>{{data.email}}</ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item no-padding>
+      <ion-label floating>{{data.country}}</ion-label>
+      <ion-input type="text" [(ngModel)]="country"></ion-input>
+    </ion-item>
+
+    <ion-item no-padding>
+      <ion-label floating>{{data.city}}</ion-label>
+      <ion-input type="text" [(ngModel)]="city"></ion-input>
+    </ion-item>
+    <button ion-button right clear button-clear (click)="onEvent('onRegister')">{{data.register}}</button>
+  </div>
+  <div class="logo">
+    <img left [src]="data.logo" />
+    <button ion-button right clear button-clear (click)="onEvent('onSkip')">{{data.skip}}</button>
+  </div>
+</ion-list>

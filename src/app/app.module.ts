@@ -35,6 +35,7 @@ import { SwipeToDismissLayout2 } from '../components/list-view/swipe-to-dismiss/
 import { ParallaxLayout1 } from '../components/parallax/layout-1/parallax-layout-1';
 import { ParallaxLayout2 } from '../components/parallax/layout-2/parallax-layout-2';
 import { LoginLayout1 } from '../components/login-register/login-layout-1/login-register-layout-1';
+import { RegisterLayout2 } from '../components/login-register/register-layout-2/register-layout-2';
 
 @NgModule({
   declarations: [
@@ -69,6 +70,7 @@ import { LoginLayout1 } from '../components/login-register/login-layout-1/login-
     ParallaxLayout2,
     ItemDetailsPageLoginAndRegister,
     LoginLayout1,
+    RegisterLayout2,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -106,6 +108,7 @@ import { LoginLayout1 } from '../components/login-register/login-layout-1/login-
     ParallaxLayout2,
     ItemDetailsPageLoginAndRegister,
     LoginLayout1,
+    RegisterLayout2,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
