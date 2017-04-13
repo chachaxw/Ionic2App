@@ -1,0 +1,18 @@
+<!---Image gallery components-->
+<image-gallery-layout-1
+  *ngIf="params.imageGalleryLayout1"
+  [data]="params.data"
+  [events]="params.events">
+</image-gallery-layout-1>
+
+<sub-image-gallery-layout-1
+  *ngIf="params.imageGalleryLayout2"
+  [data]="params.data"
+  [events]="params.events">
+</sub-image-gallery-layout-1>
+
+<image-gallery-layout-3
+  *ngIf="params.imageGalleryLayout3"
+  [data]="params.data"
+  [events]="params.events">
+</image-gallery-layout-3>

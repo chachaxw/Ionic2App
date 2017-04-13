@@ -14,6 +14,7 @@ import { ItemDetailsPageGoogleCard } from '../pages/item-details-google-card/ite
 import { ItemDetailsPageSwipeToDismiss } from '../pages/item-details-swipe-to-dismiss/item-details-swipe-to-dismiss';
 import { ItemDetailsPageParallax } from '../pages/item-details-parallax/item-details-parallax';
 import { ItemDetailsPageLoginAndRegister } from '../pages/item-details-login-register/item-details-login-register';
+import { ItemDetailsPageImageGallery } from '../pages/item-details-image-gallery/item-details-image-gallery';
 
 // Components
 import { SplashScreenLayout1 } from '../components/splash-screen/layout-1/splash-screen-layout-1';
@@ -71,6 +72,7 @@ import { RegisterLayout2 } from '../components/login-register/register-layout-2/
     ItemDetailsPageLoginAndRegister,
     LoginLayout1,
     RegisterLayout2,
+    ItemDetailsPageImageGallery,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -109,6 +111,7 @@ import { RegisterLayout2 } from '../components/login-register/register-layout-2/
     ItemDetailsPageLoginAndRegister,
     LoginLayout1,
     RegisterLayout2,
+    ItemDetailsPageImageGallery,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
