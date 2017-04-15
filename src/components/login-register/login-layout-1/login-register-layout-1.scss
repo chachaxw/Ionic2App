@@ -5,6 +5,10 @@ login-layout-1 {
     background-color: transparent;
   }
 
+  ion-list {
+    overflow: hidden;
+  }
+
   img {
     max-width: 100px;
     margin: 40px auto;
