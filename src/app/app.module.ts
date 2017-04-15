@@ -15,6 +15,7 @@ import { ItemDetailsPageSwipeToDismiss } from '../pages/item-details-swipe-to-di
 import { ItemDetailsPageParallax } from '../pages/item-details-parallax/item-details-parallax';
 import { ItemDetailsPageLoginAndRegister } from '../pages/item-details-login-register/item-details-login-register';
 import { ItemDetailsPageImageGallery } from '../pages/item-details-image-gallery/item-details-image-gallery';
+import { ItemDetailsPageSubImageGallery } from '../pages/item-details-sub-image-gallery/item-details-sub-image-gallery';
 
 // Components
 import { SplashScreenLayout1 } from '../components/splash-screen/layout-1/splash-screen-layout-1';
@@ -73,6 +74,7 @@ import { RegisterLayout2 } from '../components/login-register/register-layout-2/
     LoginLayout1,
     RegisterLayout2,
     ItemDetailsPageImageGallery,
+    ItemDetailsPageSubImageGallery,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -112,6 +114,7 @@ import { RegisterLayout2 } from '../components/login-register/register-layout-2/
     LoginLayout1,
     RegisterLayout2,
     ItemDetailsPageImageGallery,
+    ItemDetailsPageSubImageGallery,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
