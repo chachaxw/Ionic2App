@@ -1,0 +1,35 @@
+/*  #Style Category 1 (Animals)
+===========================================*/
+image-gallery-layout-1 {
+  .half {
+    position: relative;
+    width: 49.7% !important;
+    height: 130px;
+    float: left;
+    display: block;
+    margin: 0 2px 2px 0;
+  }
+
+  ion-list > .half:nth-child(2n) {
+    margin: 0 0 2px 0;
+  }
+
+  .gallery-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(37, 37, 37, 0.5)!important;
+    bottom: 0;
+    min-height: 45px;
+    border-bottom: 1px solid transparent !important;
+
+    ion-icon {
+      position: absolute;
+      right: 10px;
+      top: 20px;
+      color: theme-colors('textColors', 'primary');
+      font-size: icon-size('icon-small');
+    }
+  }
+}

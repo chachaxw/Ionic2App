@@ -38,6 +38,7 @@ import { ParallaxLayout1 } from '../components/parallax/layout-1/parallax-layout
 import { ParallaxLayout2 } from '../components/parallax/layout-2/parallax-layout-2';
 import { LoginLayout1 } from '../components/login-register/login-layout-1/login-register-layout-1';
 import { RegisterLayout2 } from '../components/login-register/register-layout-2/register-layout-2';
+import { ImageGalleryLayout1 } from '../components/image-gallery/layout-1/image-gallery-layout-1';
 
 @NgModule({
   declarations: [
@@ -75,6 +76,7 @@ import { RegisterLayout2 } from '../components/login-register/register-layout-2/
     RegisterLayout2,
     ItemDetailsPageImageGallery,
     ItemDetailsPageSubImageGallery,
+    ImageGalleryLayout1,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -115,6 +117,7 @@ import { RegisterLayout2 } from '../components/login-register/register-layout-2/
     RegisterLayout2,
     ItemDetailsPageImageGallery,
     ItemDetailsPageSubImageGallery,
+    ImageGalleryLayout1,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

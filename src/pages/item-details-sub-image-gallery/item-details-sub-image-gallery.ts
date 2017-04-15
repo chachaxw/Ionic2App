@@ -20,6 +20,6 @@ export class ItemDetailsPageSubImageGallery {
         this.params.events =navParams.get('events');
         this.params.data = navParams.get('group');
         this.params['subImageGalleryLayout' + layoutNumber] = true
-        this.params.data.fullscreen = ItemDetailsPageFullScreenGallery;
+        // this.params.data.fullscreen = ItemDetailsPageFullScreenGallery;
     }
 }
