@@ -11,6 +11,7 @@ import { ItemDetailsPageGoogleCard } from '../item-details-google-card/item-deta
 import { ItemDetailsPageSwipeToDismiss } from '../item-details-swipe-to-dismiss/item-details-swipe-to-dismiss';
 import { ItemDetailsPageParallax } from '../item-details-parallax/item-details-parallax';
 import { ItemDetailsPageLoginAndRegister } from '../item-details-login-register/item-details-login-register';
+import { ItemDetailsPageImageGallery } from '../item-details-image-gallery/item-details-image-gallery';
 
 import { SplashScreenService } from '../../services/splash-screen-service';
 import { ListViewService } from '../../services/list-view-service';
@@ -21,11 +22,13 @@ import { ListViewGoogleCardsService } from '../../services/list-view-google-card
 import { ListViewSwipeToDismissService } from '../../services/list-view-swipe-to-dismiss-service';
 import { ParallaxService } from '../../services/parallax-service';
 import { LoginRegisterService } from '../../services/login-register-service';
+import { ImageGalleryService } from '../../services/image-gallery-service';
 
 @Component({
   templateUrl: 'items.html',
   providers: [SplashScreenService, ListViewService, ListViewAppearanceAnimationService, ListViewDragAndDropService,
-    ListViewExpandableService, ListViewGoogleCardsService, ListViewSwipeToDismissService, ParallaxService, LoginRegisterService]
+    ListViewExpandableService, ListViewGoogleCardsService, ListViewSwipeToDismissService, ParallaxService, LoginRegisterService,
+    ImageGalleryService]
 })
 
 export class ItemsPage {
@@ -42,6 +45,7 @@ export class ItemsPage {
     private listViewService: ListViewService,
     private parallaxService: ParallaxService,
     private splashScreenService: SplashScreenService,
+    private imageGalleryService: ImageGalleryService,
     private loginRegisterService: LoginRegisterService,
     private listViewDragAndDropService: ListViewDragAndDropService,
     private listViewExpandableService: ListViewExpandableService,
@@ -52,8 +56,9 @@ export class ItemsPage {
     this.listServices = {
       'parallax': parallaxService,
       'listViews': listViewService,
-      'splashScreens': splashScreenService,
       'loginPages': loginRegisterService,
+      'imageGallery': imageGalleryService,
+      'splashScreens': splashScreenService,
       'dragAndDrop': listViewDragAndDropService,
       'expandable': listViewExpandableService,
       'googleCards': listViewGoogleCardsService,
@@ -89,6 +94,8 @@ export class ItemsPage {
       page = ItemDetailsPageParallax;
     } else if (value === "loginPages") {
       page = ItemDetailsPageLoginAndRegister;
+    } else if (value === "imageGallery") {
+      page = ItemDetailsPageImageGallery;
     }
 
     return page;

@@ -40,6 +40,7 @@ import { LoginLayout1 } from '../components/login-register/login-layout-1/login-
 import { RegisterLayout2 } from '../components/login-register/register-layout-2/login-register-layout-2';
 import { ImageGalleryLayout1 } from '../components/image-gallery/layout-1/image-gallery-layout-1';
 import { ImageGalleryLayout2 } from '../components/imaimage-gallery/layout-2/image-gallery-layout-2';
+import { ImageGalleryLayout3 } from '../components/imaimage-gallery/layout-3/image-gallery-layout-3';
 
 @NgModule({
   declarations: [
@@ -79,6 +80,7 @@ import { ImageGalleryLayout2 } from '../components/imaimage-gallery/layout-2/ima
     ItemDetailsPageSubImageGallery,
     ImageGalleryLayout1,
     ImageGalleryLayout2,
+    ImageGalleryLayout3,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -121,6 +123,7 @@ import { ImageGalleryLayout2 } from '../components/imaimage-gallery/layout-2/ima
     ItemDetailsPageSubImageGallery,
     ImageGalleryLayout1,
     ImageGalleryLayout2,
+    ImageGalleryLayout3,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
