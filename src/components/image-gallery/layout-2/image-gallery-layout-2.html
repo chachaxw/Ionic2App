@@ -1,0 +1,23 @@
+<!--Theme Subcategory 1 (Dogs)-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-left>{{data.toolBarTitle}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<!--Content -->
+<ion-content no-padding>
+  <ion-list no-padding>
+    <ion-card background-size class="half" *ngFor="let group of data.items;"
+    [ngStyle]="{'background-image': 'url(' + group.image + ')'}">
+      <div class="gallery-title">
+        <h2 item-title left>{{group.title}}</h2>
+        <ion-icon right (click)="onEvent('onFavorite', group, $event)">
+          <i class="icon" [ngClass]="{'icon-heart': group.favorite, 'icon-heart-outline': !group.favorite}"></i>
+        </ion-icon>
+      </div>
+    </ion-card>
+  </ion-list>
+</ion-content>
