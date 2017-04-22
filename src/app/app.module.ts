@@ -1,5 +1,8 @@
 import { NgModule, ErrorHandler, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { BrowserModule } from '@angular/platform-browser';
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 import { MyApp } from './app.component';
 
 // Pages
@@ -39,8 +42,8 @@ import { ParallaxLayout2 } from '../components/parallax/layout-2/parallax-layout
 import { LoginLayout1 } from '../components/login-register/login-layout-1/login-register-layout-1';
 import { RegisterLayout2 } from '../components/login-register/register-layout-2/login-register-layout-2';
 import { ImageGalleryLayout1 } from '../components/image-gallery/layout-1/image-gallery-layout-1';
-import { ImageGalleryLayout2 } from '../components/imaimage-gallery/layout-2/image-gallery-layout-2';
-import { ImageGalleryLayout3 } from '../components/imaimage-gallery/layout-3/image-gallery-layout-3';
+import { ImageGalleryLayout2 } from '../components/image-gallery/layout-2/image-gallery-layout-2';
+import { ImageGalleryLayout3 } from '../components/image-gallery/layout-3/image-gallery-layout-3';
 
 @NgModule({
   declarations: [
@@ -83,6 +86,7 @@ import { ImageGalleryLayout3 } from '../components/imaimage-gallery/layout-3/ima
     ImageGalleryLayout3,
   ],
   imports: [
+    BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -131,6 +135,10 @@ import { ImageGalleryLayout3 } from '../components/imaimage-gallery/layout-3/ima
   exports: [
     // ElasticHeader
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [
+    StatusBar,
+    SplashScreen,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
+  ]
 })
 export class AppModule {}

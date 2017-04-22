@@ -1,9 +1,9 @@
 import { IService } from './IService';
-import { Toast } from 'ionic-native';
+import { Toast } from '@ionic-native/toast';
 
 export class ListViewGoogleCardsService implements IService {
 
-  constructor() { }
+  constructor(private toast: Toast) { }
 
   getId = (): string => 'googleCards';
 
@@ -180,42 +180,42 @@ export class ListViewGoogleCardsService implements IService {
         if (window.location.hostname === "localhost") {
           console.log(item);
         } else {
-          Toast.show(item.title, '1000', 'bottom').subscribe(toast => { });
+          this.toast.show(item.title, '1000', 'bottom').subscribe(toast => { });
         }
       },
       'onExplore': function(item: any) {
         if (window.location.hostname === "localhost") {
           console.log("Explore");
         } else {
-          Toast.show("Explore", '1000', 'bottom').subscribe(toast => { });
+          this.toast.show("Explore", '1000', 'bottom').subscribe(toast => { });
         }
       },
       'onShare': function(item: any) {
         if (window.location.hostname === "localhost") {
           console.log("Share");
         } else {
-          Toast.show("Share", '1000', 'bottom').subscribe(toast => { });
+          this.toast.show("Share", '1000', 'bottom').subscribe(toast => { });
         }
       },
       'onLike': function(item: any) {
         if (window.location.hostname === "localhost") {
           console.log("onLike");
         } else {
-          Toast.show("onLike", '1000', 'bottom').subscribe(toast => { });
+          this.toast.show("onLike", '1000', 'bottom').subscribe(toast => { });
         }
       },
       'onFavorite': function(item: any) {
         if (window.location.hostname === "localhost") {
           console.log("onFavorite");
         } else {
-          Toast.show("onFavorite", '1000', 'bottom').subscribe(toast => { });
+          this.toast.show("onFavorite", '1000', 'bottom').subscribe(toast => { });
         }
       },
       'onFab': function(item: any) {
         if (window.location.hostname === "localhost") {
           console.log("Fab");
         } else {
-          Toast.show("Fab", '1000', 'bottom').subscribe(toast => { });
+          this.toast.show("Fab", '1000', 'bottom').subscribe(toast => { });
         }
       },
     };

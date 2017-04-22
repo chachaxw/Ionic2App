@@ -1,9 +1,9 @@
 import { IService } from './IService';
-import { Toast } from 'ionic-native';
+import { Toast } from '@ionic-native/toast';
 
 export class ParallaxService implements IService {
 
-  constructor() { }
+  constructor(private toast: Toast) { }
 
   getId = (): string => 'parallax';
 
@@ -30,56 +30,56 @@ export class ParallaxService implements IService {
         if (window.location.hostname === "localhost") {
           console.log("Like");
         } else {
-          Toast.show("Like", '1000', 'bottom').subscribe(toast => { });
+          this.toast.show("Like", '1000', 'bottom').subscribe(toast => { });
         }
       },
       'onFavorite': function(item: any) {
         if (window.location.hostname === "localhost") {
           console.log("Favorite");
         } else {
-          Toast.show("Favorite", '1000', 'bottom').subscribe(toast => { });
+          this.toast.show("Favorite", '1000', 'bottom').subscribe(toast => { });
         }
       },
       'onShare': function(item: any) {
         if (window.location.hostname === "localhost") {
           console.log("Share");
         } else {
-          Toast.show("Share", '1000', 'bottom').subscribe(toast => { });
+          this.toast.show("Share", '1000', 'bottom').subscribe(toast => { });
         }
       },
       'onSkipPrevious': function(item: any) {
         if (window.location.hostname === "localhost") {
           console.log("Skip Previous");
         } else {
-          Toast.show("Skip Previous", '1000', 'bottom').subscribe(toast => { });
+          this.toast.show("Skip Previous", '1000', 'bottom').subscribe(toast => { });
         }
       },
       'onPlay': function(item: any) {
         if (window.location.hostname === "localhost") {
           console.log("Play");
         } else {
-          Toast.show("Play", '1000', 'bottom').subscribe(toast => { });
+          this.toast.show("Play", '1000', 'bottom').subscribe(toast => { });
         }
       },
       'onSkipNext': function(item: any) {
         if (window.location.hostname === "localhost") {
           console.log("Skip Next");
         } else {
-          Toast.show("Skip Next", '1000', 'bottom').subscribe(toast => { });
+          this.toast.show("Skip Next", '1000', 'bottom').subscribe(toast => { });
         }
       },
       'onFab': function(item: any) {
       if (window.location.hostname === "localhost") {
           console.log("Fab");
         } else {
-          Toast.show("Fab", '1000', 'bottom').subscribe(toast => { });
+          this.toast.show("Fab", '1000', 'bottom').subscribe(toast => { });
         }
       },
       'onItemClick': function(item: any) {
         if (window.location.hostname === "localhost") {
           console.log(item.title);
         } else {
-          Toast.show(item.title, '1000', 'bottom').subscribe(toast => { });
+          this.toast.show(item.title, '1000', 'bottom').subscribe(toast => { });
         }
       },
     };

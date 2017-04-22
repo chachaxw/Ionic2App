@@ -1,9 +1,9 @@
 import { IService } from './IService';
-import { Toast } from 'ionic-native';
+import { Toast } from '@ionic-native/toast';
 
 export class ListViewDragAndDropService implements IService {
 
-    constructor() { }
+    constructor(private toast: Toast) { }
 
     getId = (): string => 'dragAndDrop';
 
@@ -228,21 +228,21 @@ export class ListViewDragAndDropService implements IService {
           if (window.location.hostname === "localhost") {
             console.log(item);
           } else {
-            Toast.show(item.title, '1000', 'bottom').subscribe(toast => { });
+            this.toast.show(item.title, '1000', 'bottom').subscribe(toast => { });
           }
         },
         'onProceed': function(item: any) {
           if (window.location.hostname === "localhost") {
             console.log("Proceed");
           } else {
-            Toast.show("Proceed", '1000', 'bottom').subscribe(toast => { });
+            this.toast.show("Proceed", '1000', 'bottom').subscribe(toast => { });
           }
         },
         'onFab': function(item: any) {
           if (window.location.hostname === "localhost") {
             console.log("Fab");
           } else {
-            Toast.show("Fab", '1000', 'bottom').subscribe(toast => { });
+            this.toast.show("Fab", '1000', 'bottom').subscribe(toast => { });
           }
         },
       };

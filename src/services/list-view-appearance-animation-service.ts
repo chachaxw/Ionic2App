@@ -1,9 +1,9 @@
 import { IService } from './IService';
-import { Toast } from 'ionic-native';
+import { Toast } from '@ionic-native/toast';
 
 export class ListViewAppearanceAnimationService implements IService {
 
-    constructor() { }
+    constructor(private toast: Toast) { }
 
     getId = (): string => 'appearanceAnimations';
 
@@ -164,7 +164,7 @@ export class ListViewAppearanceAnimationService implements IService {
           if (window.location.hostname === "localhost") {
             console.log(item);
           } else {
-            Toast.show(item.title, '1000', 'bottom').subscribe(toast => { });
+            this.toast.show(item.title, '1000', 'bottom').subscribe(toast => { });
           }
         },
         'onFavorite': function(item) {
@@ -174,7 +174,7 @@ export class ListViewAppearanceAnimationService implements IService {
           if (window.location.hostname === "localhost") {
             console.log("Fab");
           } else {
-            Toast.show("Fab", '1000', 'bottom').subscribe(toast => { });
+            this.toast.show("Fab", '1000', 'bottom').subscribe(toast => { });
           }
         },
       };
