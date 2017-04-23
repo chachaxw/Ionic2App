@@ -2,8 +2,8 @@ import {Component, Input} from '@angular/core';
 import {NavController, NavParams} from 'ionic-angular';
 
 @Component({
-    selector: 'image-gallery-layout-1',
-    templateUrl: 'image-gallery-layout-1.html'
+  selector: 'image-gallery-layout-1',
+  templateUrl: 'image-gallery-layout-1.html'
 })
 
 export class ImageGalleryLayout1 {
@@ -21,11 +21,11 @@ export class ImageGalleryLayout1 {
   }
 
   onEvent = (event: string, item, e): void => {
-      if (e) {
-          e.stopPropagation();
-      }
-      if (this.events[event]) {
-        this.events[event](item);
-      }
+    if (e) {
+      e.stopPropagation();
+    }
+    if (this.events[event]) {
+      this.events[event](item);
+    }
   }
 }

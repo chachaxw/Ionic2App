@@ -4,7 +4,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { IService } from '../../services/IService';
 
 import { ItemDetailsPageSubImageGallery } from '../item-details-sub-image-gallery/item-details-sub-image-gallery';
-// import { ItemDetailsPageFullScreenGallery } from '../item-details-full-screen-gallery/item-details-full-screen-gallery';
+import { ItemDetailsPageFullScreenGallery } from '../item-details-full-screen-gallery/item-details-full-screen-gallery';
 
 @Component({
   templateUrl: 'item-details-image-gallery.html'
@@ -21,6 +21,6 @@ export class ItemDetailsPageImageGallery {
     this.service = navParams.get('service');
     this.params = this.service.prepareParams(this.page, navCtrl);
     this.params.data.subGallery = ItemDetailsPageSubImageGallery;
-    // this.params.data.fullscreen = ItemDetailsPageFullScreenGallery;
+    this.params.data.fullscreen = ItemDetailsPageFullScreenGallery;
   }
 }
