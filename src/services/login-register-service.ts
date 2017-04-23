@@ -1,9 +1,11 @@
 import { IService } from './IService';
 import { Toast } from '@ionic-native/toast';
 
+const toast = new Toast();
+
 export class LoginRegisterService implements IService {
 
-  constructor(private toast: Toast) { }
+  constructor() { }
 
   getId = (): string => 'loginPages';
 
@@ -30,49 +32,49 @@ export class LoginRegisterService implements IService {
         if (window.location.hostname === "localhost") {
           console.log('onLogin:' + JSON.stringify(params));
         } else {
-          this.toast.show('onLogin:' + JSON.stringify(params), '1000', 'bottom').subscribe(toast => { });
+          toast.show('onLogin:' + JSON.stringify(params), '1000', 'bottom').subscribe(toast => { });
         }
       },
       onRegister: function(params) {
         if (window.location.hostname === "localhost") {
           console.log('onRegister:' + JSON.stringify(params));
         } else {
-          this.toast.show('onRegister:' + JSON.stringify(params), '1000', 'bottom').subscribe(toast => { });
+          toast.show('onRegister:' + JSON.stringify(params), '1000', 'bottom').subscribe(toast => { });
         }
       },
       onSkip: function(params) {
         if (window.location.hostname === "localhost") {
           console.log('onSkip:' + JSON.stringify(params));
         } else {
-          this.toast.show('onSkip:' + JSON.stringify(params), '1000', 'bottom').subscribe(toast => { });
+          toast.show('onSkip:' + JSON.stringify(params), '1000', 'bottom').subscribe(toast => { });
         }
       },
       onFacebook: function(params) {
         if (window.location.hostname === "localhost") {
           console.log('onFacebook:' + JSON.stringify(params));
         } else {
-          this.toast.show('onFacebook:' + JSON.stringify(params), '1000', 'bottom').subscribe(toast => { });
+          toast.show('onFacebook:' + JSON.stringify(params), '1000', 'bottom').subscribe(toast => { });
         }
       },
       onTwitter: function(params) {
         if (window.location.hostname === "localhost") {
           console.log('onTwitter:' + JSON.stringify(params));
         } else {
-          this.toast.show('onTwitter:' + JSON.stringify(params), '1000', 'bottom').subscribe(toast => { });
+          toast.show('onTwitter:' + JSON.stringify(params), '1000', 'bottom').subscribe(toast => { });
         }
       },
       onGoogle: function(params) {
         if (window.location.hostname === "localhost") {
           console.log('onGoogle:' + JSON.stringify(params));
         } else {
-          this.toast.show('onGoogle:' + JSON.stringify(params), '1000', 'bottom').subscribe(toast => { });
+          toast.show('onGoogle:' + JSON.stringify(params), '1000', 'bottom').subscribe(toast => { });
         }
       },
       onPinterest: function(params) {
         if (window.location.hostname === "localhost") {
           console.log('onPinterest:' + JSON.stringify(params));
         } else {
-          this.toast.show('onPinterest:' + JSON.stringify(params), '1000', 'bottom').subscribe(toast => { });
+          toast.show('onPinterest:' + JSON.stringify(params), '1000', 'bottom').subscribe(toast => { });
         }
       },
     };
