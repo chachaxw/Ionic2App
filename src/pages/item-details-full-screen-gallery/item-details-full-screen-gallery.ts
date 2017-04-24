@@ -6,7 +6,7 @@ import { IService } from '../../services/IService';
 import { FullScreenGallery } from '../../components/full-screen-gallery/full-screen-gallery';
 
 @Component({
-    templateUrl: 'item-details-full-screen-gallery.html'
+  templateUrl: 'item-details-full-screen-gallery.html'
 })
 
 export class ItemDetailsPageFullScreenGallery {
