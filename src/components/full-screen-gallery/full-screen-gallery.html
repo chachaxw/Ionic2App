@@ -1,0 +1,17 @@
+<!--Screen Gallery-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle >
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Images</ion-title>
+  </ion-navbar>
+</ion-header>
+<!--Content-->
+<ion-content>
+  <ion-slides #slider pager="true" zoom="true" [initialSlide]="data.index">
+    <ion-slide *ngFor="let item of data.items;">
+      <img [src]="item.image" />
+    </ion-slide>
+  </ion-slides>
+</ion-content>
