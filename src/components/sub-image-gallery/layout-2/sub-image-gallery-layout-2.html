@@ -1,0 +1,23 @@
+<!-- Image Sub-Gallery for Category 2 (Music)-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-left>{{data.title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<!-- Content-->
+<ion-content>
+  <ion-list no-padding>
+    <ion-card background-size class="half" *ngFor="let item of data.items;let i = index;"
+    (click)="openImageSlider(data, i)" [ngStyle]="{'background-image': 'url(' + item.image + ')'}">
+      <div class="gallery-title">
+        <div card-title left>{{item.title}}</div>
+        <ion-icon right (click)="onEvent('onFavorite', item, $event)">
+          <i class="icon" [ngClass]="{'icon-heart': item.favorite, 'icon-heart-outline': !item.favorite}"></i>
+        </ion-icon>
+      </div>
+    </ion-card>
+  </ion-list>
+</ion-content>
