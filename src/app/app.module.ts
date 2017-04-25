@@ -44,6 +44,7 @@ import { RegisterLayout2 } from '../components/login-register/register-layout-2/
 import { ImageGalleryLayout1 } from '../components/image-gallery/layout-1/image-gallery-layout-1';
 import { ImageGalleryLayout2 } from '../components/image-gallery/layout-2/image-gallery-layout-2';
 import { ImageGalleryLayout3 } from '../components/image-gallery/layout-3/image-gallery-layout-3';
+import { SubImageGalleryLayout1 } from '../components/sub-image-gallery/layout-1/sub-image-gallery-layout-1';
 
 @NgModule({
   declarations: [
@@ -84,6 +85,7 @@ import { ImageGalleryLayout3 } from '../components/image-gallery/layout-3/image-
     ImageGalleryLayout1,
     ImageGalleryLayout2,
     ImageGalleryLayout3,
+    SubImageGalleryLayout1,
   ],
   imports: [
     BrowserModule,
@@ -128,6 +130,7 @@ import { ImageGalleryLayout3 } from '../components/image-gallery/layout-3/image-
     ImageGalleryLayout1,
     ImageGalleryLayout2,
     ImageGalleryLayout3,
+    SubImageGalleryLayout1,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
