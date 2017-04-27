@@ -1,11 +1,11 @@
 import {Component, Input} from '@angular/core';
 
 @Component({
-    selector: 'search-bar-layout-1',
+    selector: 'search-bar-layout-2',
     templateUrl: 'search-bar.html'
 })
 
-export class SearchBarLayout1 {
+export class SearchBarLayout2 {
   @Input() data: any;
   @Input() events: any;
 

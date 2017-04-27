@@ -47,6 +47,7 @@ import { ImageGalleryLayout3 } from '../components/image-gallery/layout-3/image-
 import { SubImageGalleryLayout1 } from '../components/sub-image-gallery/layout-1/sub-image-gallery-layout-1';
 import { SubImageGalleryLayout2 } from '../components/sub-image-gallery/layout-2/sub-image-gallery-layout-2';
 import { SearchBarLayout1 } from '../components/search-bar/layout-1/search-bar-layout-1';
+import { SearchBarLayout2 } from '../components/search-bar/layout-2/search-bar-layout-2';
 
 @NgModule({
   declarations: [
@@ -90,6 +91,7 @@ import { SearchBarLayout1 } from '../components/search-bar/layout-1/search-bar-l
     SubImageGalleryLayout1,
     SubImageGalleryLayout2,
     SearchBarLayout1,
+    SearchBarLayout2,
   ],
   imports: [
     BrowserModule,
@@ -137,6 +139,7 @@ import { SearchBarLayout1 } from '../components/search-bar/layout-1/search-bar-l
     SubImageGalleryLayout1,
     SubImageGalleryLayout2,
     SearchBarLayout1,
+    SearchBarLayout2,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

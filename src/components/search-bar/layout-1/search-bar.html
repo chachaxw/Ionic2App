@@ -12,7 +12,7 @@
   <ion-searchbar [(ngModel)]="searchTerm" search-bar-bcg (ionInput)="onEvent('onTextChange', $event)"></ion-searchbar>
   <!-- List -->
   <ion-list no-margin>
-    <ion-item item-bcg *ngFor="let item of data.items;" (click)="onEvent('onItemClick', item)">
+    <ion-item *ngFor="let item of data.items;" (click)="onEvent('onItemClick', item)">
       <ion-icon item-left icon-small>
         <i class="icon {{item.icon}}"></i>
       </ion-icon>
