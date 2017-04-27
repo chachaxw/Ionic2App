@@ -1,0 +1,23 @@
+<!-- Theme Search bars Simple -->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title text-left>{{data.toolBarTitle}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<!-- Content -->
+<ion-content>
+  <ion-searchbar [(ngModel)]="searchTerm" search-bar-bcg (ionInput)="onEvent('onTextChange', $event)"></ion-searchbar>
+  <!-- List -->
+  <ion-list no-margin>
+    <ion-item item-bcg *ngFor="let item of data.items;" (click)="onEvent('onItemClick', item)">
+      <ion-icon item-left icon-small>
+        <i class="icon {{item.icon}}"></i>
+      </ion-icon>
+      <h2 item-title>{{item.title}}</h2>
+      <h2 item-subtitle>{{item.description}}</h2>
+    </ion-item>
+  </ion-list>
+</ion-content>
