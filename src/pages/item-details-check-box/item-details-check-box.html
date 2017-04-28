@@ -1,0 +1,33 @@
+<!--CHECK BOX - LAYOUT 1 component-->
+<ion-header *ngIf="params.checkBoxesLayout1">
+    <ion-navbar>
+      <button ion-button menuToggle >
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title text-left>{{params.title}}</ion-title>
+    </ion-navbar>
+</ion-header>
+<!--Content-->
+<ion-content *ngIf="params.checkBoxesLayout1">
+    <check-box-layout-1
+     [data]="params.data"
+     [events]="params.events">
+   </check-box-layout-1>
+</ion-content>
+
+<!--CHECK BOX - LAYOUT 2 component-->
+<ion-header *ngIf="params.checkBoxesLayout2">
+  <ion-navbar>
+    <button ion-button menuToggle >
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{params.title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<!--Content-->
+<ion-content *ngIf="params.checkBoxesLayout2">
+  <check-box-layout-2
+    [data]="params.data"
+    [events]="params.events">
+  </check-box-layout-2>
+</ion-content>

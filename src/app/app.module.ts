@@ -19,6 +19,7 @@ import { ItemDetailsPageParallax } from '../pages/item-details-parallax/item-det
 import { ItemDetailsPageLoginAndRegister } from '../pages/item-details-login-register/item-details-login-register';
 import { ItemDetailsPageImageGallery } from '../pages/item-details-image-gallery/item-details-image-gallery';
 import { ItemDetailsPageSubImageGallery } from '../pages/item-details-sub-image-gallery/item-details-sub-image-gallery';
+import { ItemDetailsPageCheckBox } from '../pages/item-details-check-box/item-details-check-box';
 
 // Components
 import { SplashScreenLayout1 } from '../components/splash-screen/layout-1/splash-screen-layout-1';
@@ -92,6 +93,7 @@ import { SearchBarLayout2 } from '../components/search-bar/layout-2/search-bar-l
     SubImageGalleryLayout2,
     SearchBarLayout1,
     SearchBarLayout2,
+    ItemDetailsPageCheckBox,
   ],
   imports: [
     BrowserModule,
@@ -140,6 +142,7 @@ import { SearchBarLayout2 } from '../components/search-bar/layout-2/search-bar-l
     SubImageGalleryLayout2,
     SearchBarLayout1,
     SearchBarLayout2,
+    ItemDetailsPageCheckBox,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
