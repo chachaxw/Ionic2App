@@ -12,6 +12,7 @@ import { ItemDetailsPageSwipeToDismiss } from '../item-details-swipe-to-dismiss/
 import { ItemDetailsPageParallax } from '../item-details-parallax/item-details-parallax';
 import { ItemDetailsPageLoginAndRegister } from '../item-details-login-register/item-details-login-register';
 import { ItemDetailsPageImageGallery } from '../item-details-image-gallery/item-details-image-gallery';
+import { ItemDetailsPageSearchBar } from '../item-details-search-bar/item-details-search-bar';
 
 import { SplashScreenService } from '../../services/splash-screen-service';
 import { ListViewService } from '../../services/list-view-service';
@@ -23,12 +24,13 @@ import { ListViewSwipeToDismissService } from '../../services/list-view-swipe-to
 import { ParallaxService } from '../../services/parallax-service';
 import { LoginRegisterService } from '../../services/login-register-service';
 import { ImageGalleryService } from '../../services/image-gallery-service';
+import { SearchBarService } from '../../services/search-bar-service';
 
 @Component({
   templateUrl: 'items.html',
   providers: [SplashScreenService, ListViewService, ListViewAppearanceAnimationService, ListViewDragAndDropService,
     ListViewExpandableService, ListViewGoogleCardsService, ListViewSwipeToDismissService, ParallaxService, LoginRegisterService,
-    ImageGalleryService]
+    ImageGalleryService, SearchBarService]
 })
 
 export class ItemsPage {
@@ -44,6 +46,7 @@ export class ItemsPage {
     public navCtrl: NavController,
     private listViewService: ListViewService,
     private parallaxService: ParallaxService,
+    private searchBarService: SearchBarService,
     private splashScreenService: SplashScreenService,
     private imageGalleryService: ImageGalleryService,
     private loginRegisterService: LoginRegisterService,
@@ -56,12 +59,13 @@ export class ItemsPage {
     this.listServices = {
       'parallax': parallaxService,
       'listViews': listViewService,
+      'searchBars': searchBarService,
       'loginPages': loginRegisterService,
       'imageGallery': imageGalleryService,
       'splashScreens': splashScreenService,
-      'dragAndDrop': listViewDragAndDropService,
       'expandable': listViewExpandableService,
       'googleCards': listViewGoogleCardsService,
+      'dragAndDrop': listViewDragAndDropService,
       'swipeToDismiss': listViewSwipeToDismissService,
       'appearanceAnimation': listViewAppearanceAnimationService,
     };
@@ -96,6 +100,8 @@ export class ItemsPage {
       page = ItemDetailsPageLoginAndRegister;
     } else if (value === "imageGallery") {
       page = ItemDetailsPageImageGallery;
+    } else if (value === "searchBars") {
+      page = ItemDetailsPageSearchBar;
     }
 
     return page;
