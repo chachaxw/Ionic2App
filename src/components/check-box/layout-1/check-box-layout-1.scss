@@ -1,0 +1,21 @@
+/*  # Theme Simple
+===========================================*/
+check-box-layout-1 {
+  .item.item-checkbox.item-checkbox-checked {
+    .checkbox-icon {
+      background-color: theme-colors('mainColors', 'secondary');
+      border: 2px solid theme-colors('mainColors', 'secondary');
+    }
+
+    .checkbox-checked .checkbox-inner {
+      border-color: theme-colors('mainColors', 'primary') !important;
+    }
+  }
+
+  .item-checkbox {
+    .checkbox-icon {
+      background-color: theme-colors('mainColors', 'primary');
+      border: 2px solid theme-colors('mainColors', 'secondary');
+    }
+  }
+}

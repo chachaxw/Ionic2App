@@ -49,6 +49,7 @@ import { SubImageGalleryLayout1 } from '../components/sub-image-gallery/layout-1
 import { SubImageGalleryLayout2 } from '../components/sub-image-gallery/layout-2/sub-image-gallery-layout-2';
 import { SearchBarLayout1 } from '../components/search-bar/layout-1/search-bar-layout-1';
 import { SearchBarLayout2 } from '../components/search-bar/layout-2/search-bar-layout-2';
+import { CheckBoxLayout1 } from '../components/check-box/layout-1/check-box-layout-1';
 
 @NgModule({
   declarations: [
@@ -94,6 +95,7 @@ import { SearchBarLayout2 } from '../components/search-bar/layout-2/search-bar-l
     SearchBarLayout1,
     SearchBarLayout2,
     ItemDetailsPageCheckBox,
+    CheckBoxLayout1,
   ],
   imports: [
     BrowserModule,
@@ -143,6 +145,7 @@ import { SearchBarLayout2 } from '../components/search-bar/layout-2/search-bar-l
     SearchBarLayout1,
     SearchBarLayout2,
     ItemDetailsPageCheckBox,
+    CheckBoxLayout1,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
