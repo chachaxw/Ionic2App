@@ -13,6 +13,7 @@ import { ItemDetailsPageParallax } from '../item-details-parallax/item-details-p
 import { ItemDetailsPageLoginAndRegister } from '../item-details-login-register/item-details-login-register';
 import { ItemDetailsPageImageGallery } from '../item-details-image-gallery/item-details-image-gallery';
 import { ItemDetailsPageSearchBar } from '../item-details-search-bar/item-details-search-bar';
+import { ItemDetailsPageCheckBox } from '../item-details-check-box/item-details-check-box';
 
 import { SplashScreenService } from '../../services/splash-screen-service';
 import { ListViewService } from '../../services/list-view-service';
@@ -25,12 +26,13 @@ import { ParallaxService } from '../../services/parallax-service';
 import { LoginRegisterService } from '../../services/login-register-service';
 import { ImageGalleryService } from '../../services/image-gallery-service';
 import { SearchBarService } from '../../services/search-bar-service';
+import { CheckBoxService } from '../../services/check-box-service';
 
 @Component({
   templateUrl: 'items.html',
   providers: [SplashScreenService, ListViewService, ListViewAppearanceAnimationService, ListViewDragAndDropService,
     ListViewExpandableService, ListViewGoogleCardsService, ListViewSwipeToDismissService, ParallaxService, LoginRegisterService,
-    ImageGalleryService, SearchBarService]
+    ImageGalleryService, SearchBarService, CheckBoxService]
 })
 
 export class ItemsPage {
@@ -44,6 +46,7 @@ export class ItemsPage {
   constructor(
     navParams: NavParams,
     public navCtrl: NavController,
+    private checkBoxService: CheckBoxService,
     private listViewService: ListViewService,
     private parallaxService: ParallaxService,
     private searchBarService: SearchBarService,
@@ -58,6 +61,7 @@ export class ItemsPage {
 
     this.listServices = {
       'parallax': parallaxService,
+      'checkBox': CheckBoxService,
       'listViews': listViewService,
       'searchBars': searchBarService,
       'loginPages': loginRegisterService,
@@ -102,6 +106,8 @@ export class ItemsPage {
       page = ItemDetailsPageImageGallery;
     } else if (value === "searchBars") {
       page = ItemDetailsPageSearchBar;
+    } else if (value === 'checkBox') {
+      page = ItemDetailsPageCheckBox;
     }
 
     return page;
