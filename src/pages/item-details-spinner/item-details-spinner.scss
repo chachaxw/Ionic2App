@@ -1,0 +1,14 @@
+// Spiner View
+.spinner-view {
+  background-color: theme-colors('mainColors', 'accent');
+
+  img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  .swiper-pagination-bullet {
+    background: theme-colors('mainColors', 'secondary') !important;
+  }
+}
