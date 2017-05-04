@@ -1,5 +1,7 @@
 import { IService } from './IService';
-import { Toast } from 'ionic-native';
+import { Toast } from '@ionic-native/toast';
+
+const toast = new Toast();
 
 export class CheckBoxService implements IService {
 
@@ -30,7 +32,7 @@ export class CheckBoxService implements IService {
         if (window.location.hostname === "localhost") {
           console.log(JSON.stringify(item));
         } else {
-          Toast.show(item.title, '1000', 'bottom').subscribe(toast => { });
+          toast.show(item.title, '1000', 'bottom').subscribe(toast => { });
         }
       }
     };

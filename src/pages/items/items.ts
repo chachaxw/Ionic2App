@@ -61,7 +61,7 @@ export class ItemsPage {
 
     this.listServices = {
       'parallax': parallaxService,
-      'checkBox': CheckBoxService,
+      'checkBox': checkBoxService,
       'listViews': listViewService,
       'searchBars': searchBarService,
       'loginPages': loginRegisterService,
