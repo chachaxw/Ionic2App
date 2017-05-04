@@ -19,6 +19,7 @@ import { ItemDetailsPageParallax } from '../pages/item-details-parallax/item-det
 import { ItemDetailsPageLoginAndRegister } from '../pages/item-details-login-register/item-details-login-register';
 import { ItemDetailsPageImageGallery } from '../pages/item-details-image-gallery/item-details-image-gallery';
 import { ItemDetailsPageSubImageGallery } from '../pages/item-details-sub-image-gallery/item-details-sub-image-gallery';
+import { ItemDetailsPageFullScreenGallery } from '../pages/item-details-full-screen-gallery/item-details-full-screen-gallery';
 import { ItemDetailsPageSearchBar } from '../pages/item-details-search-bar/item-details-search-bar';
 import { ItemDetailsPageCheckBox } from '../pages/item-details-check-box/item-details-check-box';
 
@@ -88,6 +89,7 @@ import { CheckBoxLayout1 } from '../components/check-box/layout-1/check-box-layo
     RegisterLayout2,
     ItemDetailsPageImageGallery,
     ItemDetailsPageSubImageGallery,
+    ItemDetailsPageFullScreenGallery,
     ImageGalleryLayout1,
     ImageGalleryLayout2,
     ImageGalleryLayout3,
@@ -139,6 +141,7 @@ import { CheckBoxLayout1 } from '../components/check-box/layout-1/check-box-layo
     RegisterLayout2,
     ItemDetailsPageImageGallery,
     ItemDetailsPageSubImageGallery,
+    ItemDetailsPageFullScreenGallery,
     ImageGalleryLayout1,
     ImageGalleryLayout2,
     ImageGalleryLayout3,

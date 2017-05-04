@@ -61,7 +61,7 @@ export class ItemsPage {
 
     this.listServices = {
       'parallax': parallaxService,
-      'checkBox': checkBoxService,
+      'checkBoxes': checkBoxService,
       'listViews': listViewService,
       'searchBars': searchBarService,
       'loginPages': loginRegisterService,
@@ -106,7 +106,7 @@ export class ItemsPage {
       page = ItemDetailsPageImageGallery;
     } else if (value === "searchBars") {
       page = ItemDetailsPageSearchBar;
-    } else if (value === 'checkBox') {
+    } else if (value === 'checkBoxes') {
       page = ItemDetailsPageCheckBox;
     }
 
