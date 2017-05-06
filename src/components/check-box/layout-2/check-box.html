@@ -1,0 +1,10 @@
+<!--Themes With avatar -->
+<ion-list>
+  <ion-item item-bcg *ngFor="let item of data; let i = index;" (tap)="onEvent('onButton', item)">
+    <ion-avatar item-left >
+        <img [src]="item.image">
+    </ion-avatar>
+    <ion-label item-title>{{item.title}}</ion-label>
+      <ion-checkbox item-right  [checked]="item.favorite" ></ion-checkbox>
+  </ion-item>
+</ion-list>
