@@ -1,6 +1,6 @@
 <!--Themes With avatar -->
 <ion-list>
-  <ion-item item-bcg *ngFor="let item of data; let i = index;" (tap)="onEvent('onButton', item)">
+  <ion-item *ngFor="let item of data; let i = index;" (tap)="onEvent('onButton', item)">
     <ion-avatar item-left >
         <img [src]="item.image">
     </ion-avatar>

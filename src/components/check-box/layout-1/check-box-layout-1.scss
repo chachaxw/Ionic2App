@@ -8,13 +8,13 @@ check-box-layout-1 {
     }
 
     .checkbox-checked .checkbox-inner {
-      border-color: theme-colors('mainColors', 'primary') !important;
+      border-color: theme-colors('mainColors', 'accent') !important;
     }
   }
 
   .item-checkbox {
     .checkbox-icon {
-      background-color: theme-colors('mainColors', 'primary');
+      background-color: theme-colors('mainColors', 'accent');
       border: 2px solid theme-colors('mainColors', 'secondary');
     }
   }
