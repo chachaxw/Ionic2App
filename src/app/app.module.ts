@@ -22,6 +22,7 @@ import { ItemDetailsPageSubImageGallery } from '../pages/item-details-sub-image-
 import { ItemDetailsPageFullScreenGallery } from '../pages/item-details-full-screen-gallery/item-details-full-screen-gallery';
 import { ItemDetailsPageSearchBar } from '../pages/item-details-search-bar/item-details-search-bar';
 import { ItemDetailsPageCheckBox } from '../pages/item-details-check-box/item-details-check-box';
+import { ItemDetailsPageTextView } from '../pages/item-details-text-view/item-details-text-view';
 
 // Components
 import { SplashScreenLayout1 } from '../components/splash-screen/layout-1/splash-screen-layout-1';
@@ -102,6 +103,7 @@ import { CheckBoxLayout2 } from '../components/check-box/layout-2/check-box-layo
     ItemDetailsPageCheckBox,
     CheckBoxLayout1,
     CheckBoxLayout2,
+    ItemDetailsPageTextView,
   ],
   imports: [
     BrowserModule,
@@ -155,6 +157,7 @@ import { CheckBoxLayout2 } from '../components/check-box/layout-2/check-box-layo
     ItemDetailsPageCheckBox,
     CheckBoxLayout1,
     CheckBoxLayout2,
+    ItemDetailsPageTextView,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

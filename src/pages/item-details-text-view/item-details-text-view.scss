@@ -1,0 +1,66 @@
+.title-components{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    clear: both;
+    display: block;
+    margin: 15px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+span.compomets {
+  display: block;
+  clear: both;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.block-insert {
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+
+.example-h1 {
+   font-size: font-size-text('h1');
+   color: theme-colors('textColors', 'primary');
+   font-weight: 300;
+ }
+
+ .example-h2 {
+   font-size: font-size-text('h2');
+   color: theme-colors('textColors', 'primary');
+   font-weight: 300;
+ }
+
+ .example-h3 {
+   font-size: font-size-text('h3');
+   color: theme-colors('textColors', 'primary');
+   font-weight: 300;
+ }
+
+ .example-h4 {
+   font-size: font-size-text('h4');
+   color: theme-colors('textColors', 'primary');
+   font-weight: 300;
+ }
+
+ .example-h5 {
+   font-size: font-size-text('h5');
+   color: theme-colors('textColors', 'primary');
+   font-weight: 300;
+ }
+
+ .example-h6 {
+   font-size: font-size-text('h6');
+   color: theme-colors('textColors', 'primary');
+   font-weight: 300;
+ }
+
+ .example-p {
+   font-size: font-size-text('p');
+   color: theme-colors('textColors', 'primary');
+   font-weight: 300;
+ }
