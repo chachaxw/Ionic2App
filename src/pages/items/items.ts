@@ -14,6 +14,7 @@ import { ItemDetailsPageLoginAndRegister } from '../item-details-login-register/
 import { ItemDetailsPageImageGallery } from '../item-details-image-gallery/item-details-image-gallery';
 import { ItemDetailsPageSearchBar } from '../item-details-search-bar/item-details-search-bar';
 import { ItemDetailsPageCheckBox } from '../item-details-check-box/item-details-check-box';
+import { ItemDetailsPageWizard } from '../item-details-wizard/item-details-wizard';
 
 import { SplashScreenService } from '../../services/splash-screen-service';
 import { ListViewService } from '../../services/list-view-service';
@@ -27,12 +28,13 @@ import { LoginRegisterService } from '../../services/login-register-service';
 import { ImageGalleryService } from '../../services/image-gallery-service';
 import { SearchBarService } from '../../services/search-bar-service';
 import { CheckBoxService } from '../../services/check-box-service';
+import { WizardService } from '../../services/wizard-service';
 
 @Component({
   templateUrl: 'items.html',
   providers: [SplashScreenService, ListViewService, ListViewAppearanceAnimationService, ListViewDragAndDropService,
     ListViewExpandableService, ListViewGoogleCardsService, ListViewSwipeToDismissService, ParallaxService, LoginRegisterService,
-    ImageGalleryService, SearchBarService, CheckBoxService]
+    ImageGalleryService, SearchBarService, CheckBoxService, WizardService]
 })
 
 export class ItemsPage {
@@ -46,6 +48,7 @@ export class ItemsPage {
   constructor(
     navParams: NavParams,
     public navCtrl: NavController,
+    private wizardService: WizardService,
     private checkBoxService: CheckBoxService,
     private listViewService: ListViewService,
     private parallaxService: ParallaxService,
@@ -60,6 +63,7 @@ export class ItemsPage {
     private listViewAppearanceAnimationService: ListViewAppearanceAnimationService) {
 
     this.listServices = {
+      'wizard': wizardService,
       'parallax': parallaxService,
       'checkBoxes': checkBoxService,
       'listViews': listViewService,
@@ -108,6 +112,8 @@ export class ItemsPage {
       page = ItemDetailsPageSearchBar;
     } else if (value === 'checkBoxes') {
       page = ItemDetailsPageCheckBox;
+    } else if (value = 'WizardService') {
+      page = ItemDetailsPageWizard;
     }
 
     return page;
