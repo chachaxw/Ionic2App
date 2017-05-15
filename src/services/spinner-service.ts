@@ -45,7 +45,7 @@ export class SpinnerService implements IService {
     return {
       spinner: true,
       title: item.title,
-      data: this.getDataForTheme(itemå),
+      data: this.getDataForTheme(item),
       events: this.getEventsForTheme(item)
     };
   };
