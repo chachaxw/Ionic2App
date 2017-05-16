@@ -56,6 +56,7 @@ import { SearchBarLayout2 } from '../components/search-bar/layout-2/search-bar-l
 import { CheckBoxLayout1 } from '../components/check-box/layout-1/check-box-layout-1';
 import { CheckBoxLayout2 } from '../components/check-box/layout-2/check-box-layout-2';
 import { WizardLayout1 } from '../components/wizard/layout-1/wizard-layout-1';
+import { WizardLayout2 } from '../components/wizard/layout-2/wizard-layout-2';
 
 @NgModule({
   declarations: [
@@ -107,6 +108,8 @@ import { WizardLayout1 } from '../components/wizard/layout-1/wizard-layout-1';
     CheckBoxLayout2,
     ItemDetailsPageTextView,
     ItemDetailsPageWizard,
+    WizardLayout1,
+    WizardLayout2,
   ],
   imports: [
     BrowserModule,
@@ -163,6 +166,7 @@ import { WizardLayout1 } from '../components/wizard/layout-1/wizard-layout-1';
     ItemDetailsPageTextView,
     ItemDetailsPageWizard,
     WizardLayout1,
+    WizardLayout2,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

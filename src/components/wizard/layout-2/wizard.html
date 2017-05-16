@@ -1,0 +1,24 @@
+<!--Theme Wizard Big Image -->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-left>{{data.toolBarTitle}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<!--Content-->
+<ion-content no-margin no-padding>
+  <ion-slides #wizardSlider *ngIf="data.items.length" (ionSlideDidChange)="slideHasChanged()" pager="true">
+    <ion-slide background-size *ngFor="let item of data.items;" [ngStyle]="{'background-image': 'url(' + item.backgroundImage + ')'}">
+      <h1 wizard-title>{{item.title}}</h1>
+    </ion-slide>
+  </ion-slides>
+  <!--Button section-->
+  <button default-button full ion-button (click)="changeSlide(1)" *ngIf="show('next')">
+    {{data.btnNext}}
+  </button>
+  <button default-button full ion-button (click)="onEvent('onFinish')" *ngIf="show('finish')">
+    {{data.btnFinish}}
+  </button>
+</ion-content>
