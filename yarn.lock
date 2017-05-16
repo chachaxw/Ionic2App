@@ -2,70 +2,70 @@
 # yarn lockfile v1
 
 
-"@angular/common@^4.1.1":
-  version "4.1.1"
-  resolved "http://registry.npm.taobao.org/@angular/common/download/@angular/common-4.1.1.tgz#088a13a70c5390c5c9613aa05754b74ee18e1afb"
+"@angular/common@^4.1.2":
+  version "4.1.2"
+  resolved "http://registry.npm.taobao.org/@angular/common/download/@angular/common-4.1.2.tgz#8f6d0496c204210bfe255feb437a72253f06984d"
 
-"@angular/compiler-cli@^4.1.1":
-  version "4.1.1"
-  resolved "http://registry.npm.taobao.org/@angular/compiler-cli/download/@angular/compiler-cli-4.1.1.tgz#8cea89ee12129c3f0edb55853e18b37b164f2953"
+"@angular/compiler-cli@^4.1.2":
+  version "4.1.2"
+  resolved "http://registry.npm.taobao.org/@angular/compiler-cli/download/@angular/compiler-cli-4.1.2.tgz#b65ba8980330c048702aed242a956daf0251f02a"
   dependencies:
-    "@angular/tsc-wrapped" "4.1.1"
+    "@angular/tsc-wrapped" "4.1.2"
     minimist "^1.2.0"
     reflect-metadata "^0.1.2"
 
-"@angular/compiler@^4.1.1":
-  version "4.1.1"
-  resolved "http://registry.npm.taobao.org/@angular/compiler/download/@angular/compiler-4.1.1.tgz#fc62459056465f624c3ac6f68dadcc9ba74c4ae0"
+"@angular/compiler@^4.1.2":
+  version "4.1.2"
+  resolved "http://registry.npm.taobao.org/@angular/compiler/download/@angular/compiler-4.1.2.tgz#09542381162fd8dd962d84559498ce69a05071ea"
 
-"@angular/core@^4.1.1":
-  version "4.1.1"
-  resolved "http://registry.npm.taobao.org/@angular/core/download/@angular/core-4.1.1.tgz#1230645c842f8a6a050403d4947f982e7ef70c60"
+"@angular/core@^4.1.2":
+  version "4.1.2"
+  resolved "http://registry.npm.taobao.org/@angular/core/download/@angular/core-4.1.2.tgz#37b5c040b9dd37003499aea04319d699e3870596"
 
-"@angular/forms@^4.1.1":
-  version "4.1.1"
-  resolved "http://registry.npm.taobao.org/@angular/forms/download/@angular/forms-4.1.1.tgz#6af39f7c416e9f038c39f7ee5bfa51d9da550bf0"
+"@angular/forms@^4.1.2":
+  version "4.1.2"
+  resolved "http://registry.npm.taobao.org/@angular/forms/download/@angular/forms-4.1.2.tgz#82983e9ec5d0833e7ae14beb8e47dd357c88f490"
 
-"@angular/http@^4.1.1":
-  version "4.1.1"
-  resolved "http://registry.npm.taobao.org/@angular/http/download/@angular/http-4.1.1.tgz#1e052d02e52aee7b48d1de626abbf067e850a242"
+"@angular/http@^4.1.2":
+  version "4.1.2"
+  resolved "http://registry.npm.taobao.org/@angular/http/download/@angular/http-4.1.2.tgz#fc378c3330c0410e1fb8aac2546329a6887776e4"
 
-"@angular/platform-browser-dynamic@^4.1.1":
-  version "4.1.1"
-  resolved "http://registry.npm.taobao.org/@angular/platform-browser-dynamic/download/@angular/platform-browser-dynamic-4.1.1.tgz#682881035140e22d498abca139907aa8187f6bfa"
+"@angular/platform-browser-dynamic@^4.1.2":
+  version "4.1.2"
+  resolved "http://registry.npm.taobao.org/@angular/platform-browser-dynamic/download/@angular/platform-browser-dynamic-4.1.2.tgz#d241c61792c794bec627ab64b31a66bea22abb9f"
 
-"@angular/platform-browser@^4.1.1":
-  version "4.1.1"
-  resolved "http://registry.npm.taobao.org/@angular/platform-browser/download/@angular/platform-browser-4.1.1.tgz#e2f545b458e7858cc0b20b0ae4cc99237560fb72"
+"@angular/platform-browser@^4.1.2":
+  version "4.1.2"
+  resolved "http://registry.npm.taobao.org/@angular/platform-browser/download/@angular/platform-browser-4.1.2.tgz#16e50a8f75b4d675c9e2903e499e0fe4c6a125ac"
 
-"@angular/platform-server@^4.1.1":
-  version "4.1.1"
-  resolved "http://registry.npm.taobao.org/@angular/platform-server/download/@angular/platform-server-4.1.1.tgz#263e5e3d601401a99fa3546ee57fc9fc2e7f4caa"
+"@angular/platform-server@^4.1.2":
+  version "4.1.2"
+  resolved "http://registry.npm.taobao.org/@angular/platform-server/download/@angular/platform-server-4.1.2.tgz#3ef2206a59fd2d138d267aad101a50d3d806e39c"
   dependencies:
     parse5 "^3.0.1"
     xhr2 "^0.1.4"
 
-"@angular/tsc-wrapped@4.1.1":
-  version "4.1.1"
-  resolved "http://registry.npm.taobao.org/@angular/tsc-wrapped/download/@angular/tsc-wrapped-4.1.1.tgz#ade793cdbe64c650c5f5946ff424c6a3577b09d8"
+"@angular/tsc-wrapped@4.1.2":
+  version "4.1.2"
+  resolved "http://registry.npm.taobao.org/@angular/tsc-wrapped/download/@angular/tsc-wrapped-4.1.2.tgz#26cb145a67b9b80f5dda7874c4f0b1f1e173927d"
   dependencies:
     tsickle "^0.21.0"
 
-"@ionic-native/core@^3.6.1":
-  version "3.6.1"
-  resolved "http://registry.npm.taobao.org/@ionic-native/core/download/@ionic-native/core-3.6.1.tgz#fb0dd23f611dbb33ae9bf54c897c46343968aab6"
+"@ionic-native/core@^3.8.0":
+  version "3.8.0"
+  resolved "http://registry.npm.taobao.org/@ionic-native/core/download/@ionic-native/core-3.8.0.tgz#65b6c0e0c95d84bae81b8b367c74c5dafd7f3bee"
 
-"@ionic-native/splash-screen@^3.6.1":
-  version "3.6.1"
-  resolved "http://registry.npm.taobao.org/@ionic-native/splash-screen/download/@ionic-native/splash-screen-3.6.1.tgz#bfbd1debfab35872e224fc11a148113a0854148f"
+"@ionic-native/splash-screen@^3.8.0":
+  version "3.8.0"
+  resolved "http://registry.npm.taobao.org/@ionic-native/splash-screen/download/@ionic-native/splash-screen-3.8.0.tgz#fd3cecb6723ad520c627e2f2036f4bb711702229"
 
-"@ionic-native/status-bar@^3.6.1":
-  version "3.6.1"
-  resolved "http://registry.npm.taobao.org/@ionic-native/status-bar/download/@ionic-native/status-bar-3.6.1.tgz#7ad7e3c91eaa7ef1385514b14c5a07c0ca8d5785"
+"@ionic-native/status-bar@^3.8.0":
+  version "3.8.0"
+  resolved "http://registry.npm.taobao.org/@ionic-native/status-bar/download/@ionic-native/status-bar-3.8.0.tgz#a0ba86cac80a4de5e6611a51a82118db03f97485"
 
-"@ionic-native/toast@^3.6.1":
-  version "3.6.1"
-  resolved "http://registry.npm.taobao.org/@ionic-native/toast/download/@ionic-native/toast-3.6.1.tgz#ea0b706116a3549f6be6e089f892f808d015775c"
+"@ionic-native/toast@^3.8.0":
+  version "3.8.0"
+  resolved "http://registry.npm.taobao.org/@ionic-native/toast/download/@ionic-native/toast-3.8.0.tgz#7ec66bc7b8a0b7da6631b37aee8a7be71eff67c3"
 
 "@ionic/app-scripts@^1.3.7":
   version "1.3.7"
@@ -1689,9 +1689,9 @@ invert-kv@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/invert-kv/download/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
 
-ionic-angular@^3.1.1:
-  version "3.1.1"
-  resolved "http://registry.npm.taobao.org/ionic-angular/download/ionic-angular-3.1.1.tgz#84a2765a5640713049a5dd9f454098987f5d52ae"
+ionic-angular@^3.2.1:
+  version "3.2.1"
+  resolved "http://registry.npm.taobao.org/ionic-angular/download/ionic-angular-3.2.1.tgz#fe99682204788e42a4608807081465052490c873"
 
 ionic-native@^3.5.0:
   version "3.5.0"
@@ -2912,9 +2912,9 @@ rollup@0.41.6:
   dependencies:
     source-map-support "^0.4.0"
 
-rxjs@^5.3.1:
-  version "5.3.1"
-  resolved "http://registry.npm.taobao.org/rxjs/download/rxjs-5.3.1.tgz#9ecc9e722247e4f4490d30a878577a3740fd0cb7"
+rxjs@^5.4.0:
+  version "5.4.0"
+  resolved "http://registry.npm.taobao.org/rxjs/download/rxjs-5.4.0.tgz#a7db14ab157f9d7aac6a56e655e7a3860d39bf26"
   dependencies:
     symbol-observable "^1.0.1"
 
