@@ -59,12 +59,14 @@ import { CheckBoxLayout1 } from '../components/check-box/layout-1/check-box-layo
 import { CheckBoxLayout2 } from '../components/check-box/layout-2/check-box-layout-2';
 import { WizardLayout1 } from '../components/wizard/layout-1/wizard-layout-1';
 import { WizardLayout2 } from '../components/wizard/layout-2/wizard-layout-2';
+import { ElasticHeader } from '../components/parallax/elastic-header';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ItemsPage,
+    ElasticHeader,
     ItemDetailsPage,
     ItemDetailsPageSplashScreen,
     SplashScreenLayout1,
@@ -178,7 +180,7 @@ import { WizardLayout2 } from '../components/wizard/layout-2/wizard-layout-2';
     CUSTOM_ELEMENTS_SCHEMA
   ],
   exports: [
-    // ElasticHeader
+    ElasticHeader
   ],
   providers: [
     StatusBar,
