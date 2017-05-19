@@ -24,8 +24,10 @@ import { ItemDetailsPageSearchBar } from '../pages/item-details-search-bar/item-
 import { ItemDetailsPageCheckBox } from '../pages/item-details-check-box/item-details-check-box';
 import { ItemDetailsPageTextView } from '../pages/item-details-text-view/item-details-text-view';
 import { ItemDetailsPageWizard } from '../pages/item-details-wizard/item-details-wizard';
+import { ItemDetailsPageSpinner } from '../pages/item-details-spinner/item-details-spinner';
 
 // Components
+import { Spinner } from '../components/spinner/spinner';
 import { SplashScreenLayout1 } from '../components/splash-screen/layout-1/splash-screen-layout-1';
 import { SplashScreenLayout2 } from '../components/splash-screen/layout-2/splash-screen-layout-2';
 import { SplashScreenLayout3 } from '../components/splash-screen/layout-3/splash-screen-layout-3';
@@ -110,6 +112,8 @@ import { WizardLayout2 } from '../components/wizard/layout-2/wizard-layout-2';
     ItemDetailsPageWizard,
     WizardLayout1,
     WizardLayout2,
+    ItemDetailsPageSpinner,
+    Spinner,
   ],
   imports: [
     BrowserModule,
@@ -167,6 +171,8 @@ import { WizardLayout2 } from '../components/wizard/layout-2/wizard-layout-2';
     ItemDetailsPageWizard,
     WizardLayout1,
     WizardLayout2,
+    ItemDetailsPageSpinner,
+    Spinner,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

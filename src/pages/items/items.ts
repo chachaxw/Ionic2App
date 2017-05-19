@@ -67,7 +67,7 @@ export class ItemsPage {
 
     this.listServices = {
       'wizard': wizardService,
-      'spinners': spinnerService,
+      'spinner': spinnerService,
       'parallax': parallaxService,
       'checkBoxes': checkBoxService,
       'listViews': listViewService,
@@ -118,7 +118,7 @@ export class ItemsPage {
       page = ItemDetailsPageCheckBox;
     } else if (value = 'WizardService') {
       page = ItemDetailsPageWizard;
-    } else if (value = 'spinners') {
+    } else if (value = 'spinner') {
       page = ItemDetailsPageSpinner;
     }
 
