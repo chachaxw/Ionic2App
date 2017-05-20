@@ -28,6 +28,7 @@ import { ImageGalleryService } from '../../services/image-gallery-service';
 import { SearchBarService } from '../../services/search-bar-service';
 import { CheckBoxService } from '../../services/check-box-service';
 import { ListViewService } from '../../services/list-view-service';
+import { TextViewService } from '../../services/text-view-service';
 import { ParallaxService } from '../../services/parallax-service';
 import { SpinnerService } from '../../services/spinner-service';
 import { WizardService } from '../../services/wizard-service';
@@ -36,7 +37,7 @@ import { WizardService } from '../../services/wizard-service';
   templateUrl: 'items.html',
   providers: [SplashScreenService, ListViewService, ListViewAppearanceAnimationService, ListViewDragAndDropService,
     ListViewExpandableService, ListViewGoogleCardsService, ListViewSwipeToDismissService, ParallaxService, LoginRegisterService,
-    ImageGalleryService, SearchBarService, CheckBoxService, WizardService, SpinnerService]
+    ImageGalleryService, SearchBarService, CheckBoxService, WizardService, SpinnerService, TextViewService]
 })
 
 export class ItemsPage {
