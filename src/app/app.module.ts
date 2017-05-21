@@ -9,6 +9,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ItemsPage } from '../pages/items/items';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
+import { ItemDetailsPageTabs } from '../pages/item-details-tabs/item-details-tabs';
 import { ItemDetailsPageSplashScreen } from '../pages/item-details-splash-screen/item-details-splash-screen';
 import { ItemDetailsPageAppearanceAnimation } from '../pages/item-details-appearance-animation/item-details-appearance-animation';
 import { ItemDetailsPageDragAndDrop } from '../pages/item-details-drag-and-drop/item-details-drag-and-drop';
@@ -68,6 +69,7 @@ import { ElasticHeader } from '../components/parallax/elastic-header';
     ItemsPage,
     ElasticHeader,
     ItemDetailsPage,
+    ItemDetailsPageTabs,
     ItemDetailsPageSplashScreen,
     SplashScreenLayout1,
     SplashScreenLayout2,
@@ -127,6 +129,7 @@ import { ElasticHeader } from '../components/parallax/elastic-header';
     HomePage,
     ItemsPage,
     ItemDetailsPage,
+    ItemDetailsPageTabs,
     ItemDetailsPageSplashScreen,
     SplashScreenLayout1,
     SplashScreenLayout2,

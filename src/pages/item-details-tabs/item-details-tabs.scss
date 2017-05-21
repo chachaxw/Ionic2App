@@ -1,0 +1,19 @@
+ion-tabbar {
+  background: theme-colors('mainColors', 'accent');
+}
+
+.tab-button-icon {
+  color: theme-colors('mainColors', 'secondary', 'opacity50');
+}
+
+.tab-button[aria-selected=true] {
+  border-top: 3px solid theme-colors('mainColors', 'secondary');
+  ion-icon{
+  color: theme-colors('mainColors', 'secondary') !important;
+  font-size: 30px !important;
+}
+}
+
+.scroll-tabs {
+  top: 56px;
+}
