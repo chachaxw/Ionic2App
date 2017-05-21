@@ -6,6 +6,7 @@ import { ItemDetailsPage } from '../item-details/item-details';
 import { ItemDetailsPageWizard } from '../item-details-wizard/item-details-wizard';
 import { ItemDetailsPageSpinner } from '../item-details-spinner/item-details-spinner';
 import { ItemDetailsPageParallax } from '../item-details-parallax/item-details-parallax';
+import { ItemDetailsPageTextView } from '../item-details-text-view/item-details-text-view';
 import { ItemDetailsPageCheckBox } from '../item-details-check-box/item-details-check-box';
 import { ItemDetailsPageSearchBar } from '../item-details-search-bar/item-details-search-bar';
 import { ItemDetailsPageExpandable } from '../item-details-expandable/item-details-expandable';
@@ -54,6 +55,7 @@ export class ItemsPage {
     private wizardService: WizardService,
     private spinnerService: SpinnerService,
     private checkBoxService: CheckBoxService,
+    private textViewService: TextViewService,
     private listViewService: ListViewService,
     private parallaxService: ParallaxService,
     private searchBarService: SearchBarService,
@@ -121,6 +123,8 @@ export class ItemsPage {
       page = ItemDetailsPageWizard;
     } else if (value = 'spinner') {
       page = ItemDetailsPageSpinner;
+    } else if (value = 'textViews') {
+      page = ItemDetailsPageTextView;
     }
 
     return page;
