@@ -61,6 +61,7 @@ import { CheckBoxLayout2 } from '../components/check-box/layout-2/check-box-layo
 import { WizardLayout1 } from '../components/wizard/layout-1/wizard-layout-1';
 import { WizardLayout2 } from '../components/wizard/layout-2/wizard-layout-2';
 import { ElasticHeader } from '../components/parallax/elastic-header';
+import { TabsLayout1 } from '../components/tabs/layout-1/tabs-layout-1';
 
 @NgModule({
   declarations: [
@@ -178,6 +179,7 @@ import { ElasticHeader } from '../components/parallax/elastic-header';
     WizardLayout2,
     ItemDetailsPageSpinner,
     Spinner,
+    TabsLayout1,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
