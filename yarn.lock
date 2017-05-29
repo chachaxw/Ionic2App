@@ -51,21 +51,21 @@
   dependencies:
     tsickle "^0.21.0"
 
-"@ionic-native/core@^3.10.2":
-  version "3.10.2"
-  resolved "http://registry.npm.taobao.org/@ionic-native/core/download/@ionic-native/core-3.10.2.tgz#46fce01cf9863722bc45ca08d856038eda4d7676"
+"@ionic-native/core@^3.10.3":
+  version "3.10.3"
+  resolved "http://registry.npm.taobao.org/@ionic-native/core/download/@ionic-native/core-3.10.3.tgz#c9be0a6b731e2ff6b4a60789f46c7386790bab9f"
 
-"@ionic-native/splash-screen@^3.10.2":
-  version "3.10.2"
-  resolved "http://registry.npm.taobao.org/@ionic-native/splash-screen/download/@ionic-native/splash-screen-3.10.2.tgz#f5d0ca7188afa352e654b4b1469e1c35030ced5a"
+"@ionic-native/splash-screen@^3.10.3":
+  version "3.10.3"
+  resolved "http://registry.npm.taobao.org/@ionic-native/splash-screen/download/@ionic-native/splash-screen-3.10.3.tgz#538de2aab105202c40c2241989774dc2c8931092"
 
-"@ionic-native/status-bar@^3.10.2":
-  version "3.10.2"
-  resolved "http://registry.npm.taobao.org/@ionic-native/status-bar/download/@ionic-native/status-bar-3.10.2.tgz#5b6286c4bb9d8f575b94d000ee8d796fd4f2cde9"
+"@ionic-native/status-bar@^3.10.3":
+  version "3.10.3"
+  resolved "http://registry.npm.taobao.org/@ionic-native/status-bar/download/@ionic-native/status-bar-3.10.3.tgz#d05597841c0866a1e195bafe4981c1224c16d5e5"
 
-"@ionic-native/toast@^3.10.2":
-  version "3.10.2"
-  resolved "http://registry.npm.taobao.org/@ionic-native/toast/download/@ionic-native/toast-3.10.2.tgz#07152f9384607a1018dac64a2f66b6e5813264fa"
+"@ionic-native/toast@^3.10.3":
+  version "3.10.3"
+  resolved "http://registry.npm.taobao.org/@ionic-native/toast/download/@ionic-native/toast-3.10.3.tgz#fe87f40908f5ddf43440ded7a0fc515cd897faf7"
 
 "@ionic/app-scripts@^1.3.7":
   version "1.3.7"
@@ -1689,9 +1689,9 @@ invert-kv@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/invert-kv/download/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
 
-ionic-angular@^3.2.1:
-  version "3.2.1"
-  resolved "http://registry.npm.taobao.org/ionic-angular/download/ionic-angular-3.2.1.tgz#fe99682204788e42a4608807081465052490c873"
+ionic-angular@^3.3.0:
+  version "3.3.0"
+  resolved "http://registry.npm.taobao.org/ionic-angular/download/ionic-angular-3.3.0.tgz#81cabbcb3bcc218ec9056cc4fdeaebc264db6f94"
 
 ionic-native@^3.5.0:
   version "3.5.0"
@@ -3314,9 +3314,9 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "http://registry.npm.taobao.org/typedarray/download/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript@^2.3.2:
-  version "2.3.2"
-  resolved "http://registry.npm.taobao.org/typescript/download/typescript-2.3.2.tgz#f0f045e196f69a72f06b25fd3bd39d01c3ce9984"
+typescript@^2.3.3:
+  version "2.3.3"
+  resolved "http://registry.npm.taobao.org/typescript/download/typescript-2.3.3.tgz#9639f3c3b40148e8ca97fe08a51dd1891bb6be22"
 
 uglify-js@2.8.22, uglify-js@^2.7.5:
   version "2.8.22"
