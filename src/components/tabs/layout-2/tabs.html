@@ -1,0 +1,15 @@
+<!-- Theme Tabs Footer tab - icons -->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-left>Footer tab - icons</ion-title>
+  </ion-navbar>
+</ion-header>
+<!---Content-->
+<ion-content>
+  <ion-tabs #tabs tabsPlacement='bottom'>
+    <ion-tab [tabIcon]="item.icon" [root]="item.page" *ngFor="let item of data;let i = index"></ion-tab>
+  </ion-tabs>
+</ion-content>
