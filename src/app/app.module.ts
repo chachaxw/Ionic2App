@@ -63,6 +63,7 @@ import { WizardLayout2 } from '../components/wizard/layout-2/wizard-layout-2';
 import { ElasticHeader } from '../components/parallax/elastic-header';
 import { TabsLayout1 } from '../components/tabs/layout-1/tabs-layout-1';
 import { TabsLayout2 } from '../components/tabs/layout-2/tabs-layout-2';
+import { TabsLayout3 } from '../components/tabs/layout-3/tabs-layout-3';
 
 @NgModule({
   declarations: [
@@ -122,6 +123,7 @@ import { TabsLayout2 } from '../components/tabs/layout-2/tabs-layout-2';
     Spinner,
     TabsLayout1,
     TabsLayout2,
+    TabsLayout3,
   ],
   imports: [
     BrowserModule,
@@ -184,6 +186,7 @@ import { TabsLayout2 } from '../components/tabs/layout-2/tabs-layout-2';
     Spinner,
     TabsLayout1,
     TabsLayout2,
+    TabsLayout3,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
