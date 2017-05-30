@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 
 import { IService } from '../../services/IService';
 import { ItemDetailsPage } from '../item-details/item-details';
+import { ItemDetailsPageTabs } from '../item-details-tabs/item-details-tabs';
 import { ItemDetailsPageWizard } from '../item-details-wizard/item-details-wizard';
 import { ItemDetailsPageSpinner } from '../item-details-spinner/item-details-spinner';
 import { ItemDetailsPageParallax } from '../item-details-parallax/item-details-parallax';
@@ -33,12 +34,13 @@ import { TextViewService } from '../../services/text-view-service';
 import { ParallaxService } from '../../services/parallax-service';
 import { SpinnerService } from '../../services/spinner-service';
 import { WizardService } from '../../services/wizard-service';
+import { TabsService } from '../../services/tabs-service';
 
 @Component({
   templateUrl: 'items.html',
   providers: [SplashScreenService, ListViewService, ListViewAppearanceAnimationService, ListViewDragAndDropService,
     ListViewExpandableService, ListViewGoogleCardsService, ListViewSwipeToDismissService, ParallaxService, LoginRegisterService,
-    ImageGalleryService, SearchBarService, CheckBoxService, WizardService, SpinnerService, TextViewService]
+    ImageGalleryService, SearchBarService, CheckBoxService, WizardService, SpinnerService, TextViewService, TabsService]
 })
 
 export class ItemsPage {
@@ -52,6 +54,7 @@ export class ItemsPage {
   constructor(
     navParams: NavParams,
     public navCtrl: NavController,
+    private tabsServices: TabsService,
     private wizardService: WizardService,
     private spinnerService: SpinnerService,
     private checkBoxService: CheckBoxService,
@@ -69,6 +72,7 @@ export class ItemsPage {
     private listViewAppearanceAnimationService: ListViewAppearanceAnimationService) {
 
     this.listServices = {
+      'tabs': tabsServices,
       'wizard': wizardService,
       'spinner': spinnerService,
       'parallax': parallaxService,
@@ -125,6 +129,8 @@ export class ItemsPage {
       page = ItemDetailsPageSpinner;
     } else if (value = 'textViews') {
       page = ItemDetailsPageTextView;
+    } else if (value = 'tabs') {
+      page = ItemDetailsPageTabs;
     }
 
     return page;

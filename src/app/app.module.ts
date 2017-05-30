@@ -26,6 +26,7 @@ import { ItemDetailsPageCheckBox } from '../pages/item-details-check-box/item-de
 import { ItemDetailsPageTextView } from '../pages/item-details-text-view/item-details-text-view';
 import { ItemDetailsPageWizard } from '../pages/item-details-wizard/item-details-wizard';
 import { ItemDetailsPageSpinner } from '../pages/item-details-spinner/item-details-spinner';
+import { TabPage1 } from '../pages/tab-page-1/tab-page-1';
 
 // Components
 import { Spinner } from '../components/spinner/spinner';
@@ -124,6 +125,7 @@ import { TabsLayout3 } from '../components/tabs/layout-3/tabs-layout-3';
     TabsLayout1,
     TabsLayout2,
     TabsLayout3,
+    TabPage1,
   ],
   imports: [
     BrowserModule,
@@ -187,6 +189,7 @@ import { TabsLayout3 } from '../components/tabs/layout-3/tabs-layout-3';
     TabsLayout1,
     TabsLayout2,
     TabsLayout3,
+    TabPage1,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
