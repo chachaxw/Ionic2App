@@ -27,6 +27,11 @@ import { ItemDetailsPageTextView } from '../pages/item-details-text-view/item-de
 import { ItemDetailsPageWizard } from '../pages/item-details-wizard/item-details-wizard';
 import { ItemDetailsPageSpinner } from '../pages/item-details-spinner/item-details-spinner';
 import { TabPage1 } from '../pages/tab-page-1/tab-page-1';
+import { TabPage2 } from '../pages/tab-page-2/tab-page-2';
+import { TabPage3 } from '../pages/tab-page-3/tab-page-3';
+import { TabPage4 } from '../pages/tab-page-4/tab-page-4';
+import { TabPage5 } from '../pages/tab-page-5/tab-page-5';
+import { TabPage6 } from '../pages/tab-page-6/tab-page-6';
 
 // Components
 import { Spinner } from '../components/spinner/spinner';
@@ -126,6 +131,11 @@ import { TabsLayout3 } from '../components/tabs/layout-3/tabs-layout-3';
     TabsLayout2,
     TabsLayout3,
     TabPage1,
+    TabPage2,
+    TabPage3,
+    TabPage4,
+    TabPage5,
+    TabPage6,
   ],
   imports: [
     BrowserModule,
@@ -190,6 +200,11 @@ import { TabsLayout3 } from '../components/tabs/layout-3/tabs-layout-3';
     TabsLayout2,
     TabsLayout3,
     TabPage1,
+    TabPage2,
+    TabPage3,
+    TabPage4,
+    TabPage5,
+    TabPage6,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
