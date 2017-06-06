@@ -19,8 +19,7 @@ import { RootEpics } from './epics';
 
 @NgModule({
   imports: [NgReduxModule, NgReduxRouterModule],
-  declarations: [],
-  providers: []
+  providers: [RootEpics]
 })
 export class StoreModule {
   constructor(
