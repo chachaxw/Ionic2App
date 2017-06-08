@@ -7,7 +7,6 @@ import { NgReduxModule } from '@angular-redux/store';
 import { NgReduxRouterModule } from '@angular-redux/router';
 
 import { MyApp } from './app.component';
-// import { StoreModule } from '../store/module';
 
 // Pages
 import { HomePage } from '../pages/home/home';
@@ -75,6 +74,13 @@ import { TabsLayout1 } from '../components/tabs/layout-1/tabs-layout-1';
 import { TabsLayout2 } from '../components/tabs/layout-2/tabs-layout-2';
 import { TabsLayout3 } from '../components/tabs/layout-3/tabs-layout-3';
 
+/* Redux example */
+// import { StoreModule } from '../store/module';
+import { CounterComponent } from '../pages/redux-example/counter/counter';
+import { AnimalComponent } from '../pages/redux-example/animal/animal';
+import { AnimalListComponent } from '../pages/redux-example/list/list';
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -140,6 +146,9 @@ import { TabsLayout3 } from '../components/tabs/layout-3/tabs-layout-3';
     TabPage4,
     TabPage5,
     TabPage6,
+    CounterComponent,
+    AnimalComponent,
+    AnimalListComponent,
   ],
   imports: [
     // StoreModule,
@@ -212,6 +221,9 @@ import { TabsLayout3 } from '../components/tabs/layout-3/tabs-layout-3';
     TabPage4,
     TabPage5,
     TabPage6,
+    CounterComponent,
+    AnimalComponent,
+    AnimalListComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
