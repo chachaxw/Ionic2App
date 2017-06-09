@@ -25,10 +25,12 @@ page-home {
       color: theme-colors('textColors', 'accent') !important;
       text-decoration: underline;
       text-align: center;
+      width: 80%;
       visibility: visible !important;
       position: absolute;
       bottom: 25px;
-      left: 25px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

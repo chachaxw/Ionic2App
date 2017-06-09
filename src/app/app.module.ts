@@ -76,9 +76,9 @@ import { TabsLayout3 } from '../components/tabs/layout-3/tabs-layout-3';
 
 /* Redux example */
 // import { StoreModule } from '../store/module';
-import { CounterComponent } from '../pages/redux-example/counter/counter';
-import { AnimalComponent } from '../pages/redux-example/animal/animal';
-import { AnimalListComponent } from '../pages/redux-example/list/list';
+// import { CounterComponent } from '../pages/redux-example/counter/counter';
+// import { AnimalComponent } from '../pages/redux-example/animal/animal';
+// import { AnimalListComponent } from '../pages/redux-example/list/list';
 
 
 @NgModule({
@@ -146,9 +146,9 @@ import { AnimalListComponent } from '../pages/redux-example/list/list';
     TabPage4,
     TabPage5,
     TabPage6,
-    CounterComponent,
-    AnimalComponent,
-    AnimalListComponent,
+    // CounterComponent,
+    // AnimalComponent,
+    // AnimalListComponent,
   ],
   imports: [
     // StoreModule,
@@ -221,9 +221,9 @@ import { AnimalListComponent } from '../pages/redux-example/list/list';
     TabPage4,
     TabPage5,
     TabPage6,
-    CounterComponent,
-    AnimalComponent,
-    AnimalListComponent,
+    // CounterComponent,
+    // AnimalComponent,
+    // AnimalListComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

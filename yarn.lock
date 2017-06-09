@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@angular-redux/form@^6.2.0":
+  version "6.3.0"
+  resolved "http://registry.npm.taobao.org/@angular-redux/form/download/@angular-redux/form-6.3.0.tgz#04d97a95da93cb69c852406ffbb8a5c633712977"
+  dependencies:
+    immutable "^3.8.1"
+
 "@angular-redux/router@^6.3.0":
   version "6.3.0"
   resolved "http://registry.npm.taobao.org/@angular-redux/router/download/@angular-redux/router-6.3.0.tgz#0ece17ad5a4eb8a40f54d7e3a67e67598f03d2cd"
@@ -1389,6 +1395,12 @@ findup-sync@~0.3.0:
   dependencies:
     glob "~5.0.0"
 
+flux-standard-action@^1.2.0:
+  version "1.2.0"
+  resolved "http://registry.npm.taobao.org/flux-standard-action/download/flux-standard-action-1.2.0.tgz#d2d41612dde4cebddd11a76cfead8e84fc69ebdc"
+  dependencies:
+    lodash "^4.0.0"
+
 for-in@^0.1.5:
   version "0.1.6"
   resolved "http://registry.npm.taobao.org/for-in/download/for-in-0.1.6.tgz#c9f96e89bfad18a545af5ec3ed352a1d9e5b4dc8"
@@ -1650,6 +1662,10 @@ ieee754@^1.1.4:
 immediate@~3.0.5:
   version "3.0.6"
   resolved "http://registry.npm.taobao.org/immediate/download/immediate-3.0.6.tgz#9db1dbd0faf8de6fbe0f5dd5e56bb606280de69b"
+
+immutable@^3.8.1:
+  version "3.8.1"
+  resolved "http://registry.npm.taobao.org/immutable/download/immutable-3.8.1.tgz#200807f11ab0f72710ea485542de088075f68cd2"
 
 in-publish@^2.0.0:
   version "2.0.0"
