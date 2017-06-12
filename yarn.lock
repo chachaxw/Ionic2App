@@ -12,9 +12,9 @@
   version "6.3.0"
   resolved "http://registry.npm.taobao.org/@angular-redux/router/download/@angular-redux/router-6.3.0.tgz#0ece17ad5a4eb8a40f54d7e3a67e67598f03d2cd"
 
-"@angular-redux/store@^6.4.2":
-  version "6.4.2"
-  resolved "http://registry.npm.taobao.org/@angular-redux/store/download/@angular-redux/store-6.4.2.tgz#f105609dd35a433b5c1dd6c9055fb753f42ae5fe"
+"@angular-redux/store@^6.4.5":
+  version "6.4.5"
+  resolved "http://registry.npm.taobao.org/@angular-redux/store/download/@angular-redux/store-6.4.5.tgz#48cbbbdf00c2d8a707efde33f4928ad10d6e650f"
 
 "@angular/common@^4.1.3":
   version "4.1.3"
@@ -3690,6 +3690,6 @@ yargs@~3.10.0:
     decamelize "^1.0.0"
     window-size "0.1.0"
 
-zone.js@^0.8.11:
-  version "0.8.11"
-  resolved "http://registry.npm.taobao.org/zone.js/download/zone.js-0.8.11.tgz#742befb17fbc49a571712b8c7d87e58ca26fd886"
+zone.js@^0.8.12:
+  version "0.8.12"
+  resolved "http://registry.npm.taobao.org/zone.js/download/zone.js-0.8.12.tgz#86ff5053c98aec291a0bf4bbac501d694a05cfbb"
