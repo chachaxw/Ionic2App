@@ -13,7 +13,7 @@ const URLS = {
 }
 
 @Injectable()
-export class AnimalService {
+export class AnimalAPIService {
   constructor(private http: Http) {}
 
   getAll = (animalType: AnimalType): Observable<IAnimal[]> =>

@@ -9,7 +9,7 @@ import 'rxjs/add/operator/startWith';
 import { IAppState } from '../../../store/model';
 import { AnimalType, ANIMAL_TYPES } from '../model';
 import { AnimalAPIAction, AnimalAPIActions } from '../api/actions';
-import { AnimalService } from "./service";
+import { AnimalAPIService } from "./service";
 
 type Predicate = (any)=> boolean;
 
@@ -36,7 +36,7 @@ export class AnimalAPIEpics {
   }
 
   private createLoadAnimalEpic(animalType): Epic<AnimalAPIAction, IAppState> {
-    return (action$, store) => actions$
+    return (action$, store) => action$
       .ofType(AnimalAPIActions.LOAD_ANIMALS)
       .filter(action => actionIsForCorrectAnimalType(animalType)(action))
       .filter(() => animalsNotAlreadyFetched(animalType, store.getState()))
