@@ -1,6 +1,7 @@
 import { Component, Input, ChangeDetectionStrategy, OnInit } from '@angular/core';
-import { NgRedux, dispatch, select, ObservableStore } from '@angular-redux/store';
-import { Observable } from 'rxjs/Observable';
+import { NgRedux, ObservableStore } from '@angular-redux/store';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import 'rxjs/add/observable/combineLatest';
 
 import { IAppState } from '../../../store/model';
@@ -41,9 +42,9 @@ export class AnimalComponent implements OnInit {
       );
       this.name$ = this.subStore.select('name');
       this.numTickets$ = this.subStore.select(['tickets'])
-        .map(n => n || 0);
+        .pipe(map(n => n || 0));
       this.ticketPrice$ = this.subStore.select(['ticketPrice'])
-        .map(n => n || 1);
+        .pipe(map(n => n || 1));
 
       this.subTotal$ = Observable.combineLatest(
         this.numTickets$,

@@ -1,5 +1,5 @@
 import { IService } from './IService';
-import { Toast } from '@ionic-native/toast';
+import { Toast } from '@ionic-native/toast/ngx';
 
 const toast = new Toast();
 
